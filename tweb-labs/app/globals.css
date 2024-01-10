@@ -8,6 +8,7 @@ h2 {
     font-size: x-large;
     font-weight: 800;
 }
+
 @keyframes show {
     from {
         opacity: 0;
@@ -30,20 +31,53 @@ img {
     animation-fill-mode: both;
 }
 
-.header-container { 
+.header-container {
     position: sticky;
     animation: enhance-header linear both;
     animation-timeline: scroll(root block);
     animation-range: 0 200px;
 }
 
-@keyframes enchance-header {   
-    to{
-        background: rgba(244,87,0 , .4);
+@keyframes enchance-header {
+    to {
+        background: rgba(244, 87, 0, .4);
         backdrop-filter: blur(5px);
     }
 }
 
 .footer-text {
     font-size: 10px;
+}
+
+@media (max-width: 767px) {
+    .highlight-text{
+        font-weight: 700;
+        text-shadow: 2px 2px 1px black;
+        color: rgb(255, 173, 115)
+    }
+    .mobile1 {
+        background-image: url('/imgs/Description-1.jpg');
+        background-size: cover;
+        background-position: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        filter: brightness(90%);
+        
+    }
+    .mobile2 {
+        background-image: url('/imgs/Description-2.jpg');
+        background-size: cover;
+        background-position: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        filter: brightness(90%);
+    }
+    .mobile3 {
+        background-image: url('/imgs/Description-3.jpg');
+        background-size: cover;
+        background-position: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        filter: brightness(90%);
+    }
 }
