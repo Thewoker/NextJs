@@ -1,0 +1,19 @@
+.contact-us-img {
+    height: 50px;
+    width: 50px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    left: 0;
+}
+
+.img-logo-contact-us {
+    border-radius: 0px;
+    height: 15%;
+    width: 15%;
+}
+
+.info-contact {
+    width: 370px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}

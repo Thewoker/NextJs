@@ -1,0 +1,81 @@
+.main-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    line-height: normal;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 span {
+    color: #04E1FF;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+div h2.who-are-we {
+    display: flex;
+    width: 559px;
+    height: 90px;
+    padding: 4px 0px;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 70px;
+    background: linear-gradient(180deg, rgba(109, 107, 155, 0.60) 0%, rgba(217, 217, 217, 0.00) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.subtitle {
+    width: 50%;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+    color: #FFF;
+    
+}
+
+.about-container {
+    /* opacity: 0.3; */
+    width: 100vw;
+    height: 40vh;
+}
+
+div p.about-us {
+    border-radius: 70px;
+    background: linear-gradient(180deg, #A9A6F7 0%, rgba(173, 170, 227, 0.52) 28.58%, rgba(217, 217, 217, 0.00) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    color: #FFF;
+    padding: 3%;
+}
+
+.rocket {
+    width: 339px;
+    height: 288px;
+    top: -50%;
+    left: -70%;
+}
+
+.books {
+    width: 211.039px;
+    height: 373.38px;
+    flex-shrink: 0;
+}
