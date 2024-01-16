@@ -50,21 +50,19 @@ div h2.who-are-we {
 }
 
 .about-container {
-    /* opacity: 0.3; */
+    display: flex;
     width: 100vw;
     height: 40vh;
 }
 
 div p.about-us {
+    font-size: 16px;
     border-radius: 70px;
     background: linear-gradient(180deg, #A9A6F7 0%, rgba(173, 170, 227, 0.52) 28.58%, rgba(217, 217, 217, 0.00) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     width: 40%;
     color: #FFF;
-    padding: 3%;
+    padding: 1.4%;
 }
 
 .rocket {

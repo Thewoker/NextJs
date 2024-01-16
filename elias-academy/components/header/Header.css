@@ -15,7 +15,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.logo-conj{
+.logo-conj {
     margin-left: 40px;
     margin-top: 45px;
 }
@@ -50,4 +50,9 @@ h3 span {
 .nav-link:hover {
     opacity: 0.8;
     background: linear-gradient(#7f6499, #3b3838);
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
 }

@@ -3,7 +3,7 @@ import './contact-us.css'
 
 function ContactUs() {
     return (
-        <div className='flex flex-col justify-center items-center'>
+        <div className='flex flex-col justify-center items-center' id='contact'>
             <h2>Contáctanos</h2>
             <div>
                 <div className='flex justify-center items-center'>
