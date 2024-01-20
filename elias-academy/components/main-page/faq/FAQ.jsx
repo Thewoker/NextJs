@@ -3,7 +3,7 @@ import './faq.css'
 
 function FAQ() {
     return (
-        <div><div className="container-FAQ">
+        <div><div className="container-FAQ" id='faq'>
             <h2>Preguntas Frecuentes</h2>
             <div className='faq-asked'>
                 <p><strong>¿Qué tipo de contenido de video ofrecen y en qué materias o disciplinas se especializan?</strong></p>

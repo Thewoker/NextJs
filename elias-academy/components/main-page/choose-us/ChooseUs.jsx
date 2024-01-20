@@ -3,7 +3,7 @@ import './choose-us.css'
 
 function ChooseUs() {
   return (
-    <div className='flex justify-center items-center'>
+    <div className='flex justify-center items-center' id='whochooseus'>
         <div className='flex flex-col justify-center items-center m-10 conteiner-choose-us gap-5'>
         <h2 className='choose-us-title'>¿Porqué elegirnos?</h2>
         <div className='flex flex-row gap-5 choose-us-article justify-center items-center py-3 border-1 border-spacing-y-1'>

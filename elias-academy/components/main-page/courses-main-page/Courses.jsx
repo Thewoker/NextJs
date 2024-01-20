@@ -44,7 +44,7 @@ function Courses() {
 
 
   return (
-    <section className='py-10 flex flex-col items-center justify-center relative'>
+    <section className='py-10 flex flex-col items-center justify-center relative' id='courses'>
       <div><h2 className='courses'>Cursos</h2></div>
       <label className='py-3'>
         <select name="selectedCourse" value={selectedCourse} onChange={e => setSelectedCourse(e.target.value)}>
@@ -59,7 +59,7 @@ function Courses() {
         <div className={`section section-1 relative gap`}>
           <h1>{courseData?.title}</h1>
           <p>{courseData?.description}</p>
-          <img src="imgs/logo.png" alt="Logo" className="logo-courses" />
+          <img src="imgs/logo.png" alt="Logo" className="logo-courses " />
         </div>
         <div className={`section section-2`}>
           <h1>Plan Mensual</h1>
