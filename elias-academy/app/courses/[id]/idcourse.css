@@ -1,0 +1,88 @@
+.caps {
+  background: #D4D4D4;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.title-class {
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.material {
+  display: grid;
+  grid-row: 1fr 14fr;
+}
+
+.study-card {
+  width: 100%;
+  height: 55px;
+}
+
+.barra-lateral {
+  width: 25%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #f0f0f0;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* .header-content {
+  position: absolute;
+  
+  margin: 10px
+} */
+
+.header-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+}
+
+.header-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.barra-lateral h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.barra-lateral ul {
+  list-style: none;
+}
+
+.barra-lateral li {
+  margin: 10px 0;
+}
+
+.barra-lateral a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.barra-lateral a:hover {
+  background-color: #ccc;
+}
+
+/* Estilo para indicar que una clase está completada */
+.completado a {
+  background-color: #90ee90;
+}
+
+.contenido {
+  width: 75%;
+  height: 100vh;
+  margin-left: 25%;
+  padding: 20px;
+}

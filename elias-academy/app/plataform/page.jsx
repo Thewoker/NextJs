@@ -5,7 +5,7 @@ import Plataform from '@/components/plataform/lobby/Plataform'
 
 function page() {
   return (
-    <div className='h-screen py-4 relative'>
+    <div className='h-full py-4 relative'>
         <Header/>
         <Plataform/>
     </div>
