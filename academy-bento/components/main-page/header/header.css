@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Aleo:ital@0;1&family=Passion+One:wght@400;700&display=swap');
+/* font-family: 'Acme', sans-serif;
+font-family: 'Aleo', serif;
+font-family: 'Passion One', sans-serif; */
+
+
+header {
+    min-width: 100%;
+    border: 1px solid #01EAF9;
+    background: #192338;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.navbar {
+    height: 80px;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.header-elements {
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+}
+
+.tags {
+    font-family: 'Acme', sans-serif;
+    padding: 30px;
+    min-width: 75%;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.logo {
+    padding: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    font-size: 50px;
+    font-family: 'Passion One', sans-serif;
+}
