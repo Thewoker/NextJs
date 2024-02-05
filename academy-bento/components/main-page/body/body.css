@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Akshar:wght@500&family=Aleo&family=Alfa+Slab+One&family=League+Gothic&family=Passion+One&display=swap');
+
 .title {
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -24,4 +26,336 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.light-blue-box {
+    background: #47e0f4;
+    width: 570px;
+    height: 565px;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.light-blue-box-h3 {
+    text-wrap: balance;
+    color: #000;
+    font-family: 'Passion One', sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.light-blue-box p {
+    color: #000;
+    font-family: 'Aleo', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.foro-consult {
+    width: 571px;
+    height: 319px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.foro-consult h3 {
+    text-wrap: balance;
+    color: #000;
+    font-family: 'Passion One', sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.foro-consult div p {
+    color: #000;
+    font-family: 'Aleo', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.foro-consult div img {
+    width: 195px;
+    height: 160px;
+}
+
+.right-conteiner {
+    width: 570px;
+    height: 945px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.right-conteiner h3 {
+    color: #000;
+    font-family: 'Passion One', sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.right-conteiner p {
+    color: #000;
+    font-family: 'Aleo', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.right-conteiner img {
+    width: 235.294px;
+    height: 500px;
+}
+
+hr {
+    width: 1283.006px;
+    height: 1px;
+    background: #DADADA;
+}
+
+.talk-people {
+    background-color: #FFF;
+    height: 422px;
+}
+
+.talk-people img {
+    width: 369px;
+    height: 372px;
+}
+
+.learn-coop {
+    background: #0D1D54;
+    height: 422px;
+}
+
+.learn-coop h3 {
+    color: #FFF;
+    font-family: 'Passion One', sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.learn-coop p {
+    color: #FFF;
+    font-family: 'Aleo', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title-code {
+    color: #FFF;
+    font-family: 'Alfa Slab One', serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.card-code h3 {
+    color: #FFF;
+    font-family: 'Alfa Slab One', serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.card-code p {
+    color: #FFF;
+    font-family: 'Aleo', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-code img.img-one {
+    width: 246px;
+    height: 257px;
+}
+
+.card-code img.img-two {
+    width: 232px;
+    height: 270px;
+}
+
+.left-code-card {
+    height: 571px;
+    background: #0F1444;
+}
+
+.right-code-card {
+    height: 570px;
+    background: rgba(76, 109, 174, 0.79);
+}
+
+.courses-title {
+    color: #FFF;
+    font-family: 'Alfa Slab One', serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.couses-subtitle {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Passion One', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+
+.large-box {
+    height: 501px;
+    width: 31.7vw;
+    border-radius: 8px;
+    border: 1px solid #04E1FF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.light-blue-bar-courses {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #04E1FF;
+    color: #000;
+    font-family: 'Aleo', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.include {
+    color: #FFF;
+    font-family: 'Alfa Slab One', serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.list-include {
+    list-style-type: disc;
+}
+
+.list-include li {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.des-ben-mas {
+    color: #FFF;
+    font-family: 'Alfa Slab One', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cal-1-main {
+    width: 196px;
+    height: 164px;
+}
+
+.about {
+    color: #FFF;
+    font-family: 'Alfa Slab One', serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.about-course {
+    color: #FFF;
+    font-family: 'Aleo', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style-type: decimal;
+}
+
+.about img {
+    width: 106px;
+    height: 117px;
+}
+
+.short-box {
+    width: 392px;
+    height: 219px;
+    border-radius: 8px;
+    border: 1px solid #04E1FF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.desc-price {
+    color: #FFF;
+    font-family: Aleo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 4px;
+    border: 1px solid #04E1FF;
+    background: #1C1515;
+}
+
+.sem-title {
+    color: #FFF;
+    font-family: Aleo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sem-button {
+    width: 133px;
+    height: 34px;
+    border-radius: 3px;
+    border: 1px solid #04E1FF;
+    background: #0A0F2B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-family: Aleo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.titles-inter h3 {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'League Gothic', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.titles-inter img {
+    width: 377px;
+    height: 510px;
 }
