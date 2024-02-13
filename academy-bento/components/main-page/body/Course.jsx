@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-function Course({ props }) {
+function Course() {
     return (
         <div className='p-10 flex flex-col w-full'>
             <div className='box-container w-full flex flex-row justify-between items-center flex-wrap'>
@@ -10,7 +10,7 @@ function Course({ props }) {
                     <div className='top-0 absolute flex w-full light-blue-bar-courses justify-center items-center'>¡Curso con un 20% de descuento!</div>
                     <div className='flex justify-center items-center pt-7 pb-3'>
                         <h2 className='include'>
-                            Cálculo I
+                            Planes
                         </h2>
                     </div>
                     <p className='p-4'>Incluye: </p>
@@ -30,10 +30,10 @@ function Course({ props }) {
                     <div className='top-0 absolute flex w-full light-blue-bar-courses justify-center items-center'>¡Queremos lo mejor para ti!</div>
                     <div className='flex justify-center items-center pt-7 pb-3'>
                         <h2 className='about'>
-                            Acerca de Cálculo I
+                            Acerca de los planes
                         </h2>
                     </div>
-                    <p className='p-4 about-course'>Este curso intensivo te equipa con todo lo necesario para sobresalir en las interrogaciones de Cálculo I. Cubriendo los temas clave del ramo, nos enfocamos en: </p>
+                    <p className='p-4 about-course'>Este curso intensivo te equipa con todo lo necesario para sobresalir en las interrogaciones de tus materias. Cubriendo los temas clave del ramo, nos enfocamos en: </p>
                     <ol className='p-10 py-4 about-course'>
                         <li>Práctica Intensiva: Resolución de ejercicios reales de interrogaciones pasadas.</li>
                         <li>Consejos de Tutores: Aprende estrategias y tips directamente de ex ayudantes del ramo.</li>
@@ -78,10 +78,36 @@ function Course({ props }) {
                         <h3>Planes específicos para interrogaciones:</h3>
                         <img src='/imgs/main-page/calculo-1-interrogacion.png' />
                     </div>
-                    <div>
-                        
+                    <div className='flex flex-row flex-wrap gap-10 w-[55vw] justify-center items-center'>
+                        <div className='inter-box flex flex-col justify-center items-center gap-5'>
+                            <h3 className='inter-box-title'>¡Prepara la I1!</h3>
+                            <p className='inter-box-text p-2'>Este plan te permite tener acceso a todos los videos preparativos para la interrogación I del ramo.</p>
+                            <p className='inter-box-price'>Plan FreshmanU $ 9.990 CLP</p>
+                            <Link href="#"><button className='sem-button'>Quiero inscribirme</button></Link>
+                        </div>
+                        <div className='inter-box flex flex-col justify-center items-center gap-5'>
+                            <h3 className='inter-box-title'>¡Prepara la I1!</h3>
+                            <p className='inter-box-text p-2'>Este plan te permite tener acceso a todos los videos preparativos para la interrogación I del ramo.</p>
+                            <p className='inter-box-price'>Plan FreshmanU $ 9.990 CLP</p>
+                            <Link href="#"><button className='sem-button'>Quiero inscribirme</button></Link>
+                        </div>
+                        <div className='inter-box flex flex-col justify-center items-center gap-5'>
+                            <h3 className='inter-box-title'>¡Prepara la I1!</h3>
+                            <p className='inter-box-text p-2'>Este plan te permite tener acceso a todos los videos preparativos para la interrogación I del ramo.</p>
+                            <p className='inter-box-price'>Plan FreshmanU $ 9.990 CLP</p>
+                            <Link href="#"><button className='sem-button'>Quiero inscribirme</button></Link>
+                        </div>
+                        <div className='inter-box flex flex-col justify-center items-center gap-5'>
+                            <h3 className='inter-box-title'>¡Prepara la I1!</h3>
+                            <p className='inter-box-text p-2'>Este plan te permite tener acceso a todos los videos preparativos para la interrogación I del ramo.</p>
+                            <p className='inter-box-price'>Plan FreshmanU $ 9.990 CLP</p>
+                            <Link href="#"><button className='sem-button'>Quiero inscribirme</button></Link>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div className='flex justify-center items-center'>
+                <hr />
             </div>
         </div>
     )

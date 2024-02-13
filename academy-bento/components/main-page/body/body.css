@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Akshar:wght@500&family=Aleo&family=Alfa+Slab+One&family=League+Gothic&family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Akshar:wght@500&family=Aleo&family=Alfa+Slab+One&family=Almarai&family=League+Gothic&family=Passion+One&display=swap');
 
 .title {
     color: #FFF;
@@ -158,7 +158,7 @@ hr {
 
 .title-code {
     color: #FFF;
-    font-family: 'Alfa Slab One', serif;
+    font-family: 'League Gothic', sans-serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 800;
@@ -167,7 +167,7 @@ hr {
 
 .card-code h3 {
     color: #FFF;
-    font-family: 'Alfa Slab One', serif;
+    font-family: 'League Gothic', sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 800;
@@ -205,7 +205,7 @@ hr {
 
 .courses-title {
     color: #FFF;
-    font-family: 'Alfa Slab One', serif;
+    font-family: 'League Gothic', sans-serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
@@ -244,7 +244,7 @@ hr {
 
 .include {
     color: #FFF;
-    font-family: 'Alfa Slab One', serif;
+    font-family: 'League Gothic', sans-serif;
     font-size: 26px;
     font-style: normal;
     font-weight: 800;
@@ -265,7 +265,7 @@ hr {
 
 .des-ben-mas {
     color: #FFF;
-    font-family: 'Alfa Slab One', serif;
+    font-family: 'League Gothic', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -279,7 +279,7 @@ hr {
 
 .about {
     color: #FFF;
-    font-family: 'Alfa Slab One', serif;
+    font-family: 'League Gothic', sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 800;
@@ -311,7 +311,7 @@ hr {
 
 .desc-price {
     color: #FFF;
-    font-family: Aleo;
+    font-family: 'Aleo', serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -323,7 +323,7 @@ hr {
 
 .sem-title {
     color: #FFF;
-    font-family: Aleo;
+    font-family: 'Aleo', serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -338,7 +338,7 @@ hr {
     background: #0A0F2B;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #FFF;
-    font-family: Aleo;
+    font-family: 'Aleo', serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -358,4 +358,180 @@ hr {
 .titles-inter img {
     width: 377px;
     height: 510px;
+}
+
+.inter-box {
+    width: 392px;
+    height: 269px;
+    border-radius: 8px;
+    border: 1px solid #04E1FF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.inter-box-title {
+    color: #FFF;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.inter-box-text {
+    color: #FFF;
+    font-family: 'Almarai', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.inter-box-price {
+    color: #FFF;
+    font-family: 'Aleo', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.faq-title {
+    color: #FFF;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.faq-text-title {
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.faq-text {
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.faq-img-1 {
+    width: 227px;
+    height: 410px;
+}
+
+.faq-img-2 {
+    width: 392px;
+    height: 385px;
+}
+
+.faq-img-3 {
+    width: 117px;
+    height: 335px;
+}
+
+.ventajas-title {
+    color: #FFF;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ventajas-box {
+    width: 289px;
+    height: 277px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ventajas-img {
+    width: 132px;
+    height: 359px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ventajas-box-text {
+    color: #070E31;
+    font-family: 'Almarai', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.contact-img {
+    width: 412px;
+    height: 316px;
+}
+
+.contact {
+    width: 1131px;
+    height: 321px;
+    border-radius: 6px;
+    background: #FFF;
+}
+
+.contact-title {
+    color: #000;
+    font-family: 'Almarai', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.contact-subtitle {
+    color: #B8B8B8;
+    font-family: 'Almarai', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.contact-button {
+    width: 147px;
+    height: 43px;
+    border-radius: 6px;
+    background: #8A0DFF;
+    color: #FFF;
+    font-family: 'Almarai', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.contact-title-net {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Passion One', sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.redes-img {
+    width: 62px;
+    height: 66px;
+}
+
+.redes-font p {
+    color: #FFF;
+    font-family: 'Almarai', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
