@@ -1,8 +1,14 @@
+"use client"
 import React from 'react'
 import Link from 'next/link'
+import { useAuthContext } from "@/contexts/AuthContext"
+import { useRouter } from 'next/navigation';
 import './header.css'
 
 function Header() {
+    const router = useRouter();
+    const { user } = useAuthContext();
+
     return (
         <header className='h-[12vh] header sticky-header absolute top-0 '>
             <div className="navbar flex relative">
@@ -14,7 +20,7 @@ function Header() {
                     <li className="nav-link"><Link href="#faq">F.A.Q.</Link></li>
                     <li className="nav-link"><Link href="#whochooseus">¿Por que elegirnos?</Link></li>
                     <li className="nav-link"><Link href="#contact">Contáctanos</Link></li>
-                    <li className="nav-link pr-4"><Link href="/login">Iniciar Sesión</Link></li>
+                    <li className="nav-link pr-4"><Link href={user.logged && user.uid != null ? "/cursos" : "/ingresar"}>Iniciar Sesión</Link></li>
                 </ul>
             </div>
         </header>
