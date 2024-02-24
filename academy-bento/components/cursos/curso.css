@@ -31,6 +31,15 @@
     line-height: normal;
 }
 
+.titulo-buy {
+    color: #000;
+    font-family: Anton;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .curso-img {
     width: 153px;
     height: 139px;

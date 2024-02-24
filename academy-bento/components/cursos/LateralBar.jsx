@@ -45,10 +45,10 @@ function LateralBar() {
                     <CiHome className='text-white text-4xl' />
                     <p className='text-lateral'>Mi Perfil</p>
                 </div>
-                <div className='flex flex-row items-center gap-3 cursor-pointer'>
+                <Link href='/cursos' className='flex flex-row items-center gap-3 cursor-pointer'>
                     <CiSearch className='text-white text-4xl' />
                     <p className='text-lateral'>Mis Cursos</p>
-                </div>
+                </Link>
                 <div className='flex flex-row items-center gap-3 cursor-pointer'>
                     <CiChat2 className='text-white text-4xl' />
                     <p className='text-lateral'>Consultas</p>
