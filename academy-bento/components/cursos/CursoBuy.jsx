@@ -2,39 +2,29 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
 import './curso.css'
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@nextui-org/react";
-import MercadoPagoButton from './MercadoPagoButton'
+import { useAuthContext } from '@/contexts/AuthContext'
 
 
 
-function CursoBuy({ course, buy }) {
+function CursoBuy({ course }) {
     const [notification, setNotificacion] = useState({
         isOpen: false,
         type: null,
         content: "",
     });
-    const [chosedPlan, setChosedPlan] = useState(course.precioSemestral);
-    const [orderData, setOrderData] = useState({ id: course.slug, titulo: course.titulo, precio: Number(chosedPlan) });
-
-
-
-
-    
-
-    const [courseToBuy, setCourseToBuy] = useState(null);
-    const [plan, setPlan] = useState(new Set(["semestral"]));
-    const handlePlan = React.useMemo(
-        () => Array.from(plan).join(", ").replaceAll("_", " "),
-        [plan]
+    const [orderData, setOrderData] = useState({ id: course.slug, title: course.titulo, price: Number(course.precioSemestral) });
+    const { plan, setPlan } = useAuthContext()
+    const [selectedKeys, setSelectedKeys] = useState(new Set(["semestral"]));
+    const selectedValue = React.useMemo(
+        () => Array.from(selectedKeys).join(", ").replaceAll("_", " "),
+        [selectedKeys]
     );
+    const [ selectedPlan, SetSelectedPlan ] = useState('semestral')
 
 
     useEffect(() => {
 
-        setChosedPlan(plan == "semestral" ? course.precioSemestral : course.precioMensual)
-        setOrderData({ id: course.slug, titulo: course.titulo, precio: Number(chosedPlan) })
-
-        // buy(courseToBuy, chosedPlan)
-    }, [], [plan])
+    }, [], [selectedValue])
 
     return (
         <div className='relative flex flex-col justify-center items-center curso-container'>
@@ -48,7 +38,7 @@ function CursoBuy({ course, buy }) {
                             variant="bordered"
                             className="capitalize"
                         >
-                            {handlePlan}
+                            {selectedValue}
                         </Button>
                     </DropdownTrigger>
                     <DropdownMenu
@@ -56,16 +46,24 @@ function CursoBuy({ course, buy }) {
                         variant="flat"
                         disallowEmptySelection
                         selectionMode="single"
-                        selectedKeys={plan}
-                        onSelectionChange={setPlan}
+                        selectedKeys={selectedKeys}
+                        onSelectionChange={setSelectedKeys}
                     >
-                        <DropdownItem key="semestral">Plan Semestral: {course.precioSemestral} CLP</DropdownItem>
-                        <DropdownItem key="mensual">Plan Mensual: {course.precioMensual} CLP</DropdownItem>
+                        <DropdownItem key="semestral" onClick={() => { 
+                            setPlan({ id: course.slug, title: course.titulo, price: Number(course.precioSemestral) });
+                            SetSelectedPlan('semestral')
+                        }
+                        }>Plan Semestral:  CLP</DropdownItem>
+                        <DropdownItem key="mensual" onClick={() => { 
+                            setPlan({ id: course.slug, title: course.titulo, price: Number(course.precioMensual) });
+                            SetSelectedPlan('mensual')
+                        }
+                        }>Plan Mensual:  CLP</DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
-                <div className="btn-acceder flex justify-center items-center">
-                    <MercadoPagoButton product={orderData} className="" />
-                </div>
+                <Link href={`/${course.slug}`} className="btn-acceder flex justify-center items-center" onClick={() => { (selectedPlan == "semestral") ? setPlan({ id: course.slug, title: course.titulo, price: Number(course.precioSemestral) }) : setPlan({ id: course.slug, title: course.titulo, price: Number(course.precioMensual) })}}>
+                    Comprar
+                </Link>
                 {notification.isOpen && (
                     <div className="">
                         <div

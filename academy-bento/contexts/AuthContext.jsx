@@ -15,6 +15,12 @@ export const AuthProvider = ({ children }) => {
         cursos: []
     })
 
+    const [plan, setPlan] = useState({
+        id: null,
+        title: "",
+        price: 0
+    })
+
     const getCursos = async () => {
         if (user.logged && user.uid) {
             const userRef = doc(db, 'usuarios', user.uid);
@@ -34,7 +40,7 @@ export const AuthProvider = ({ children }) => {
                     logged: true,
                     email: user.email,
                     uid: user.uid,
-                    cursos: getCursos
+                    cursos: getCursos()
                 })
             } else {
                 setUser({
@@ -49,7 +55,9 @@ export const AuthProvider = ({ children }) => {
 
     return (
         <AuthContext.Provider value={{
-            user
+            user,
+            plan,
+            setPlan
         }}>
             {children}
         </AuthContext.Provider>

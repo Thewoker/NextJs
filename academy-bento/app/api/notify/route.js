@@ -1,11 +1,12 @@
+// /app/api/notify/route.ts
+
 import mercadopago from "mercadopago";
-import { NextRequest } from "next/server";
 
 // A fines del tutorial pongo un token de muestra, pero siempre esta información se tiene que manejar
 // como variable de entorno en un archivo .env
 
 mercadopago.configure({
-    access_token: process.env.MP_ACCESS_TOKEN,
+    access_token: process.env.NEXT_ACCESS_TOKEN,
 });
 
 export async function GET(req) {

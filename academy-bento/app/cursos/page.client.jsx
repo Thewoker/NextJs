@@ -20,7 +20,7 @@ const getCourses = async () => {
     }
 }
 
-function page({ buy }) {
+function page() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [size, setSize] = React.useState('5xl')
     const [courses, setCourses] = React.useState([]);
@@ -70,7 +70,7 @@ function page({ buy }) {
                                     <ModalHeader className="flex flex-col justify-center items-center gap-1">¡¡Accede a los mejores cursos aqui!!</ModalHeader>
                                     <ModalBody>
                                         <div className='flex flex-row justify-center items-center flex-wrap gap-20 p-10'>
-                                            {courses?.map(course => <CursoBuy key={course.slug} course={course} buy={buy} />)}
+                                            {courses?.map(course => <CursoBuy key={course.slug} course={course}/>)}
                                         </div>
                                     </ModalBody>
                                 </>
