@@ -8,6 +8,11 @@ import './cursos.css'
 function CursoBar({ course }) {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [size, setSize] = React.useState('5xl')
+    const [isChecked, setIsChecked] = React.useState(() => {
+        const saved = localStorage.getItem('isChecked');
+        const initialValue = JSON.parse(saved);
+        return initialValue || false;
+    });
 
     const handleOpen = () => {
         onOpen();
@@ -15,12 +20,18 @@ function CursoBar({ course }) {
 
     const hadleClose = () => {
         onClose();
+        setIsChecked(true);
     }
+
+    React.useEffect(() => {
+        localStorage.setItem('isChecked', JSON.stringify(isChecked));
+    }, [isChecked]);
+
     return (
         <>
             <div className='flex flex-row justify-between items-center p-5 clase-bar w-full'>
                 <div className='flex flex-row gap-3'>
-                    <CiCircleCheck className='check-vid' />
+                    <CiCircleCheck className={`check-vid ${isChecked ? 'text-[#00ff0a]' : ''}`} />
                     <h3>
                         {course.titulo}
                     </h3>

@@ -17,7 +17,7 @@ const getCourse = async (currentFolder) => {
     return courseData;
 }
 
-function page() {
+function Page() {
     const [loading, setLoading] = useState(true);
     const pathname = usePathname()
     const { plan } = useAuthContext()
@@ -63,4 +63,4 @@ function page() {
     )
 }
 
-export default page
+export default Page

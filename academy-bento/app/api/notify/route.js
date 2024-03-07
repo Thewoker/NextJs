@@ -2,8 +2,7 @@
 
 import mercadopago from "mercadopago";
 
-// A fines del tutorial pongo un token de muestra, pero siempre esta información se tiene que manejar
-// como variable de entorno en un archivo .env
+
 
 mercadopago.configure({
     access_token: process.env.NEXT_ACCESS_TOKEN,
@@ -18,7 +17,7 @@ export async function GET(req) {
         if (topic === "payment") {
             const paymentId = searchParams.get('id') || searchParams.get('data.id');
             let payment = await mercadopago.payment.findById(Number(paymentId));
-            let paymentStatus = payment.body.status;
+            let paymentStatus = payment.body.status;   
 
             console.log({ payment, paymentStatus });
 

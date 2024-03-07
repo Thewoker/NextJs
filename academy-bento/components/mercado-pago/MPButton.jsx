@@ -1,9 +1,16 @@
+"use client"
 import React, { useEffect, useState } from 'react'
 import axios from "axios";
 import "./styles.css"
 import { initMercadoPago, Wallet } from '@mercadopago/sdk-react';
+import { doc, getDoc, updateDoc, arrayUnion } from "firebase/firestore";
+import { db } from '@/firebase/config'
+import { useRouter } from 'next/navigation';
+import { useAuthContext } from '@/contexts/AuthContext'
 
 export function MPButton({ product }) {
+    const { user } = useAuthContext()
+    const router = useRouter();
     const [url, setUrl] = useState(null)
     const [loading, setLoading] = useState(true);
 
@@ -12,8 +19,7 @@ export function MPButton({ product }) {
         initMercadoPago(process.env.NEXT_PUBLIC_KEY, { locale: 'es-CL' });
         const generatedLink = async () => {
             try {
-                console.log(product)
-                const { data: preference } = await axios.post('api/checkout', product);
+                const { data: preference } = await axios.post('api/checkout', product );
                 
                 setUrl(preference.url)
             } catch (error) {
@@ -23,6 +29,24 @@ export function MPButton({ product }) {
             setLoading(false);
         };
 
+        const asociados = async () => {
+            if (db && user && user.uid) {
+                const userRef = doc(db, 'usuarios', user.uid);
+                const userSnapshot = await getDoc(userRef);
+                const courseData = userSnapshot?.data();
+                if (courseData.contadorDeAfiliados % 5 == 0) {
+                    await updateDoc(userRef, { cursos: arrayUnion(courseData.cursoPagado), contadorDeAfiliados: 0 })
+                    router.push('/cursos');
+                }
+                return false
+            } else {
+                console.log("Error al procesar datos intentalo de nuevo")
+                return false
+            }
+        };
+    
+        
+        asociados();
         generatedLink()
     }, [product])
 

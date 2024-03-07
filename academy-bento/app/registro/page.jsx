@@ -11,7 +11,7 @@ import { doc, setDoc } from 'firebase/firestore';
 import { useRouter } from 'next/navigation';
 import { toast } from "react-toastify";
 
-function page() {
+function Page() {
     const router = useRouter();
     const [isVisible, setIsVisible] = React.useState(false);
     const toggleVisibility = () => setIsVisible(!isVisible);
@@ -21,7 +21,8 @@ function page() {
         telefono: "562879565",
         carrera: "Ing. en Sistemas",
         email: "joedoe@freshmanu.com",
-        password: ""
+        password: "",
+        avatarImg: ""
     });
 
 
@@ -36,12 +37,13 @@ function page() {
                 telefono: data.telefono,
                 carrera: data.carrera,
                 email: data.email,
-                password: data.password
+                password: data.password,
+                avatarImg: ""
             }));
             toast.success("Usuario creado correctamente.", {
                 hideProgressBar: true,
             });
-            router.push('/');
+            router.push('/ingresar');
         } catch (error) {
             toast.error(`El usuario no fue creado correctamente. Error: \n${error}`, {
                 hideProgressBar: true,
@@ -153,4 +155,4 @@ function page() {
     )
 }
 
-export default page
+export default Page

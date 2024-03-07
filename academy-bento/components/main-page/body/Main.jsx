@@ -1,14 +1,19 @@
+"use client"
 import ButtonOne from '@/components/ui/buttons/button1/ButtonOne'
 import React from 'react'
+import Link from 'next/link'
+import { useAuthContext } from "@/contexts/AuthContext"
 
 
 function Main() {
+  const { user } = useAuthContext();
+
   return (
     <div className='flex flex-col justify-center items-center'>
       <div className='title flex flex-col justify-center items-center'>
         <h3 className='mt-[15vh]'>LA <span>MEJOR OPCIÓN</span> PARA <span>PASAR TUS RAMOS</span></h3>
         <p className='subtitle w-1/2 my-8'>¡Clases dictadas por los mejores ex ayudantes de los ramos, ejercicios de pruebas anteriores explicados de la mejor manera posible, foros de consulta y mucho más!</p>
-        <ButtonOne content='Ver cursos' width='199px' height='60px' />
+        <Link href={user.logged && user.uid != null ? "/cursos" : "/ingresar"}><ButtonOne content='Ver cursos' width='199px' height='60px' /></Link>
       </div>
       <div className='flex flex-wrap w-full justify-center items-center pb-10'>
         <div className='left-conteiner'>

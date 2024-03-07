@@ -2,8 +2,8 @@ import React from 'react'
 
 function Ventajas() {
     return (
-        <div className='p-10'>
-            <h3 className='p-10 ventajas-title'>
+        <div className='p-10' >
+            <h3 className='p-10 ventajas-title' id='whochooseus'>
                 En FreshmanU <span className='text-[#04E1FF]'>hacemos la diferencia</span>. Descubre las <span className='text-[#04E1FF]'>ventajas</span> de estudiar con nosotros.
             </h3>
             <div className='flex flex-row flex-wrap justify-center items-center gap-44 relative'>

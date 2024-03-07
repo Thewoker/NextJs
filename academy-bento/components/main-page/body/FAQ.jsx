@@ -3,7 +3,7 @@ import React from 'react'
 function FAQ() {
     return (
         <div>
-            <div className=' flex flex-col'>
+            <div className=' flex flex-col' id='faq'>
                 <h2 className='px-[6%] faq-title py-10'>Preguntas Frecuentes</h2>
                 <div className='px-[6%]'>
                     <div className='relative py-10'>

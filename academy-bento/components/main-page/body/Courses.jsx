@@ -5,8 +5,8 @@ import CourseList from './CourseList'
 function Courses() {
     return (
         <>
-            <div className='flex justify-center items-center'>
-                <h2 className='courses-title'>Cursos</h2>
+            <div className='flex justify-center items-center' id='plan'>
+                <h2 className='courses-title'>Planes de pago</h2>
             </div>
             <div className='flex flex-col  p-5'>
                 <div className='flex items-start'>

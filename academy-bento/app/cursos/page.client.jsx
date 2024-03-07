@@ -20,10 +20,11 @@ const getCourses = async () => {
     }
 }
 
-function page() {
+function Page() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [size, setSize] = React.useState('5xl')
     const [courses, setCourses] = React.useState([]);
+
 
     React.useEffect(() => {
         try {
@@ -63,13 +64,15 @@ function page() {
                         size={size}
                         isOpen={isOpen}
                         onClose={onClose}
+                        scrollBehavior="inside"
+                        maxH="80vh"
                     >
                         <ModalContent>
                             {(onClose) => (
                                 <>
                                     <ModalHeader className="flex flex-col justify-center items-center gap-1">¡¡Accede a los mejores cursos aqui!!</ModalHeader>
                                     <ModalBody>
-                                        <div className='flex flex-row justify-center items-center flex-wrap gap-20 p-10'>
+                                        <div className='flex flex-row justify-center items-center flex-wrap gap-10 p-10'>
                                             {courses?.map(course => <CursoBuy key={course.slug} course={course}/>)}
                                         </div>
                                     </ModalBody>
@@ -86,4 +89,4 @@ function page() {
     )
 }
 
-export default page
+export default Page

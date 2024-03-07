@@ -1,0 +1,41 @@
+.loading {
+    width: fit-content;
+    text-decoration: none;
+    background-color: #3483fa;
+    padding: 0 2rem;
+    height: 50px;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition-duration: 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.dot {
+    animation: dot 1s infinite;
+    animation-delay: calc(.2s * var(--i));
+    font-size: 50px;
+}
+
+@keyframes dot {
+
+    0%,
+    20% {
+        opacity: 0;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+    }
+}

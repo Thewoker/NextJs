@@ -2,11 +2,9 @@
 import React from 'react'
 import Link from 'next/link'
 import { useAuthContext } from "@/contexts/AuthContext"
-import { useRouter } from 'next/navigation';
 import './header.css'
 
 function Header() {
-    const router = useRouter();
     const { user } = useAuthContext();
 
     return (
@@ -16,7 +14,7 @@ function Header() {
                     <h3 className='logo-text'>FreshManU</h3>
                 </div>
                 <ul className="header-elements tags flex right-0 justify-between">
-                    <li className="nav-link pl-4"><Link href="#courses">Cursos</Link></li>
+                    <li className="nav-link pl-4"><Link href="#plan">Planes</Link></li>
                     <li className="nav-link"><Link href="#faq">F.A.Q.</Link></li>
                     <li className="nav-link"><Link href="#whochooseus">¿Por que elegirnos?</Link></li>
                     <li className="nav-link"><Link href="#contact">Contáctanos</Link></li>

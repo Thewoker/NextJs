@@ -23,7 +23,7 @@ const getClases = async (currentFolder) => {
     return null;
 }
 
-function page() {
+function Page() {
     const pathname = usePathname()
     const currentFolder = path.basename(pathname);
     const [courses, setCourses] = useState([]);
@@ -54,7 +54,7 @@ function page() {
                         <div className='flex flex-row justify-center items-center material-de-estudio p-1'><button>Material de Estudio</button></div>
                     </div>
                     <div className='flex flex-col justify-center items-center gap-5 py-5'>
-                        {courses.map((course) => (
+                        {courses?.map((course) => (
                             <CursoBar key={course.titulo} course={course} />
                         ))}
                     </div>
@@ -64,4 +64,4 @@ function page() {
     )
 }
 
-export default page
+export default Page

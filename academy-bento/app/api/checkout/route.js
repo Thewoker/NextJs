@@ -6,19 +6,18 @@ mercadopago.configure({
     access_token: process.env.NEXT_ACCESS_TOKEN,
 });
 
-const URL = "http://localhost:3000";
+const URL = "https://2a1a-2803-9800-94c0-9778-f16d-4fe6-da8d-272d.ngrok-free.app";
 
 export async function POST(req) {
+    const data = await req.json()
+    
     try {
         const preference = {
             items: [
                 {
-                    title: "prueba",
-                    unit_price: 10,
-                    quantity: 1,
-                    // title: req.body.product.title,
-                    // unit_price: req.body.product.price,
-                    // quantity: 1
+                    title: data.title,
+                    unit_price: data.price,
+                    quantity: 1
                 },
             ],
             auto_return: "approved",

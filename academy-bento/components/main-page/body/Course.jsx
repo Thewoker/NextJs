@@ -1,7 +1,11 @@
+"use client"
 import React from 'react'
 import Link from 'next/link'
+import { useAuthContext } from "@/contexts/AuthContext"
 
 function Course() {
+    const { user } = useAuthContext();
+    
     return (
         <div className='p-10 flex flex-col w-full'>
             <div className='box-container w-full flex flex-row justify-between items-center flex-wrap'>
@@ -51,7 +55,7 @@ function Course() {
                         <p className='desc-price mt-10 p-1 inline-block'>Plan Standard <del>$ 69.990 CLP</del></p>
                         <div className='flex flex-col justify-center items-center m-5 gap-4'>
                             <h3 className='sem-title'>Plan FreshmanU $ 49.990 CLP</h3>
-                            <Link href="#"><button className='sem-button'>Quiero inscribirme</button></Link>
+                            <Link href={user.logged && user.uid != null ? "/cursos" : "/ingresar"}><button className='sem-button'>Quiero inscribirme</button></Link>
                         </div>
                     </div>
                     <div className='short-box box-4 relative'>
@@ -59,7 +63,7 @@ function Course() {
                         <p className='desc-price mt-10 p-1 inline-block'>Plan Standard <del>$ 19.990 CLP</del></p>
                         <div className='flex flex-col justify-center items-center m-5 gap-4'>
                             <h3 className='sem-title'>Plan FreshmanU $ 14.990 CLP</h3>
-                            <Link href="#"><button className='sem-button'>Quiero inscribirme</button></Link>
+                            <Link href={user.logged && user.uid != null ? "/cursos" : "/ingresar"} ><button className='sem-button'>Quiero inscribirme</button></Link>
                         </div>
                     </div>
                 </div>
@@ -83,25 +87,25 @@ function Course() {
                             <h3 className='inter-box-title'>¡Prepara la I1!</h3>
                             <p className='inter-box-text p-2'>Este plan te permite tener acceso a todos los videos preparativos para la interrogación I del ramo.</p>
                             <p className='inter-box-price'>Plan FreshmanU $ 9.990 CLP</p>
-                            <Link href="#"><button className='sem-button'>Quiero inscribirme</button></Link>
+                            <Link href={user.logged && user.uid != null ? "/cursos" : "/ingresar"}><button className='sem-button'>Quiero inscribirme</button></Link>
                         </div>
                         <div className='inter-box flex flex-col justify-center items-center gap-5'>
                             <h3 className='inter-box-title'>¡Prepara la I1!</h3>
                             <p className='inter-box-text p-2'>Este plan te permite tener acceso a todos los videos preparativos para la interrogación I del ramo.</p>
                             <p className='inter-box-price'>Plan FreshmanU $ 9.990 CLP</p>
-                            <Link href="#"><button className='sem-button'>Quiero inscribirme</button></Link>
+                            <Link href={user.logged && user.uid != null ? "/cursos" : "/ingresar"}><button className='sem-button'>Quiero inscribirme</button></Link>
                         </div>
                         <div className='inter-box flex flex-col justify-center items-center gap-5'>
                             <h3 className='inter-box-title'>¡Prepara la I1!</h3>
                             <p className='inter-box-text p-2'>Este plan te permite tener acceso a todos los videos preparativos para la interrogación I del ramo.</p>
                             <p className='inter-box-price'>Plan FreshmanU $ 9.990 CLP</p>
-                            <Link href="#"><button className='sem-button'>Quiero inscribirme</button></Link>
+                            <Link href={user.logged && user.uid != null ? "/cursos" : "/ingresar"}><button className='sem-button'>Quiero inscribirme</button></Link>
                         </div>
                         <div className='inter-box flex flex-col justify-center items-center gap-5'>
                             <h3 className='inter-box-title'>¡Prepara la I1!</h3>
                             <p className='inter-box-text p-2'>Este plan te permite tener acceso a todos los videos preparativos para la interrogación I del ramo.</p>
                             <p className='inter-box-price'>Plan FreshmanU $ 9.990 CLP</p>
-                            <Link href="#"><button className='sem-button'>Quiero inscribirme</button></Link>
+                            <Link href={user.logged && user.uid != null ? "/cursos" : "/ingresar"}><button className='sem-button'>Quiero inscribirme</button></Link>
                         </div>
                     </div>
                 </div>

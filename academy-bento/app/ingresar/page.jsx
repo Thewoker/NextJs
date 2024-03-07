@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import './ingresar.css'
 import { Input } from "@nextui-org/react";
 import { EyeFilledIcon } from "./EyeFilledIcon";
@@ -9,16 +9,22 @@ import { auth, db } from "@/firebase/config"
 import { useRouter } from 'next/navigation';
 import { toast } from "react-toastify";
 import { signInWithEmailAndPassword } from "firebase/auth"
+import { getAuth, sendPasswordResetEmail } from "firebase/auth";
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure } from "@nextui-org/react";
 
 
-function page() {
+function Page() {
     const router = useRouter();
     const [isVisible, setIsVisible] = React.useState(false);
     const toggleVisibility = () => setIsVisible(!isVisible);
+    const { isOpen, onOpen, onClose } = useDisclosure();
     var [data, setData] = React.useState({
         email: "joedoe@freshmanu.com",
         password: ""
     });
+    const [recovery, setRecovery] = useState({
+        email: ""
+    })
 
     const loginUser = async (values) => {
         try {
@@ -36,6 +42,41 @@ function page() {
             // Puedes agregar aquí el manejo de errores específico que desees
         }
     }
+
+    const handleOpen = () => {
+        onOpen();
+    }
+
+    const hadleClose = () => {
+        onClose();
+    }
+
+    const handleChange = (e) => {
+        setRecovery({
+            ...recovery,
+            [e?.target?.name]: e?.target?.value
+        })
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const auth = getAuth();
+        sendPasswordResetEmail(auth, recovery.email)
+            .then(() => {
+                toast.success("Correo enviado.", {
+                    hideProgressBar: true,
+                });
+            }).catch((error) => {
+                toast.error(`Algo ha salido mal. Error: \n${error}`, {
+                    hideProgressBar: true,
+                });
+                console.log("Algo ha salido mal:", error);
+                const errorCode = error.code;
+                const errorMessage = error.message;
+            });
+    };
+
 
     return (
         <div className='h-screen flex flex-col justify-center items-center relative'>
@@ -93,9 +134,41 @@ function page() {
                     </form>
                 </div>
                 <div className='flex flex-col justify-center items-center msg-registro m-2'><p className=''>¿Aún no tienes cuenta? <span onClick={() => router.push('/registro')} className='cursor-pointer underline hover:text-[#4f82e3]'>¡¡CRÉALA AQUÍ!!</span></p></div>
+                <div className='flex flex-col justify-center items-center msg-registro m-2'><p className=''>¿Olvidaste tu contraseña? <span onClick={() => handleOpen()} className='cursor-pointer underline hover:text-[#4f82e3]'>¡¡RECUPERALA AQUÍ!!</span></p></div>
+                {/* Inicio Modal */}
+                <Modal
+                    size={'5xl'}
+                    isOpen={isOpen}
+                    onClose={onClose}
+                >
+                    <ModalContent>
+                        {(onClose) => (
+                            <>
+                                <ModalHeader className="flex flex-col justify-center items-center gap-1">Recuperar contraseña</ModalHeader>
+                                <ModalBody>
+                                    <form onSubmit={handleSubmit} className='my-12'>
+                                        <label >E-Mail:</label>
+                                        <input
+                                            type="text"
+                                            value={recovery?.email}
+                                            required
+                                            class="p-2 rounded w-full border-solid border-2 border-indigo-300 block my-4"
+                                            name="email"
+                                            onChange={handleChange}
+                                        />
+
+                                        <button onClick={() => hadleClose()} class="border border-solid border-2 border-indigo-300 p-2 rounded">Enviar</button>
+
+                                    </form>
+                                </ModalBody>
+                            </>
+                        )}
+                    </ModalContent>
+                </Modal>
+                {/* Fin Mas Cursos */}
             </div>
         </div>
     )
 }
 
-export default page
+export default Page
