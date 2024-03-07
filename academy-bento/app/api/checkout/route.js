@@ -6,7 +6,7 @@ mercadopago.configure({
     access_token: process.env.NEXT_ACCESS_TOKEN,
 });
 
-const URL = "https://2a1a-2803-9800-94c0-9778-f16d-4fe6-da8d-272d.ngrok-free.app";
+const URL = "https://fresh-man-u.vercel.app/";
 
 export async function POST(req) {
     const data = await req.json()
