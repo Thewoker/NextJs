@@ -4,7 +4,7 @@ import Link from "next/link";
 import './contact.css'
 
 function Contact() {
-    const email = 'leoneljararavarotto@hotmail.com';
+    const email = 'negocios@tweblabs.org';
 
     const handleEmailClick = () => {
         window.location.href = `mailto:${email}`;
