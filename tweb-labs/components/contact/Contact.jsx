@@ -21,7 +21,7 @@ function Contact() {
                         </div>
                     </div>
                 </button>
-                <a href="https://wa.me/5493624725787" target="_blank" className=' w-[50%] max-h-[50vh] align-middle'>
+                <a href="https://wa.me/message/35D3UKWP5SZIN1" target="_blank" className=' w-[50%] max-h-[50vh] align-middle'>
                     <div className='icon'>
                         <h4 className='text-center'>Send a Whatsapp</h4>
                         <div className='flex justify-center'>
