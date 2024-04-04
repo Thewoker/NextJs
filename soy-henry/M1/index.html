@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+
+<body class="">
+    <div class="flex gap-5 photo-name-container">
+        <div class="photo-profile"></div>
+        <div class="name-container">
+            <p class="presentation-name">Hola 👋🏻 soy</p>
+            <h1 class="name-h1">Leonel Fernando,<br />Jara Ravarotto</h1>
+            <p class="rol-name">FullStack Web Developer</p>
+        </div>
+    </div>
+    <div class="presentation-contact flex flex-col">
+        <h2>¡Charlemos! Estoy listo para trabajar en proyectos apasionantes.</h2>
+        <p class="text-white"><span>Hola, me llamo Leonel, me dedico actualmente al mantenimiento y diseño de páginas web como aplicaciones dedicadas orientadas a la experiencia de usuario. También poseo experiencia de trabajos anteriores, mantenimiento de servidores y administración de bases de datos, también ser capaz de reproducir cosas que solo podíamos ver en nuestra mente y demostrar resultados creando aplicaciones. Una breve descripción de mí sería una persona insaciable que siempre se encuentra aprendiendo cosas y buscando poner en práctica lo aprendido. </span></p>
+    </div>
+    <!-- asdasdasdasda -->
+    <div></div>
+    <div class="create-activity p-4">
+        <form id="activity-form">
+            <div class="form-group ">
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="imgUrl">URL de la Imagen:</label>
+                <input type="url" id="imgUrl" name="imgUrl" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <div class="view-activity p-4 flex flex-wrap">
+
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
