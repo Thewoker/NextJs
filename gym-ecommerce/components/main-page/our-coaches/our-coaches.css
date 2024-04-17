@@ -1,0 +1,17 @@
+.our-coaches h2 {
+    font-family: "Russo One", sans-serif;
+    ;
+    font-size: 45px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.our-coaches p {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: white
+}

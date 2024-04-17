@@ -1,0 +1,8 @@
+.carousel-quote {
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.carousel-quote.show {
+    opacity: 1;
+}
