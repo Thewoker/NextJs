@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fugaz+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
+
+body {
+    background-color: black;
+}
+
+.bg-img-shop {
+    background: url("/shop/bg-header.jpg") lightgray 50% / cover no-repeat;
+    background-position: center 60%;
+}
+
+.shop-title {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+    font-style: normal;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 10px black;
+}
