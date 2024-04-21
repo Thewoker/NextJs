@@ -5,7 +5,7 @@ import ImgTextRoutine from './ImgTextRoutine'
 
 function AboutUs() {
   return (
-    <div className='px-[15%]'>
+    <div className='px-[15%]' id='servicios'>
       <h2 className='title-about-us'>Nuestro Gimnasio</h2>
       <div className='about-us-bicep w-full h-[60vh]'></div>
       <div className='flex bicep-text p-3 pl-0'>

@@ -1,0 +1,31 @@
+.product-title {
+    font-family: Roboto;
+    font-size: xx-large;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: -0.48px;
+}
+
+.product-price{
+    font-family: Roboto;
+    font-size: x-large;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: -0.48px;
+}
+
+.product-description {
+    font-family: Roboto;
+    font-size: medium;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.product-quantity {
+    font-family: Roboto;
+    font-size: medium;
+    font-style: normal;
+    font-weight: 700;
+}

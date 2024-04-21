@@ -4,7 +4,7 @@ import Button from '@/components/ui/button-rounded-1/Button'
 
 function Contact() {
     return (
-        <div className='flex flex-col w-full h-[60vh] contact mb-10  bg-white relative'>
+        <div className='flex flex-col w-full h-[60vh] contact mb-10  bg-white relative' id='contact'>
             <div className=' w-full h-full obsolute flex flex-col justify-center items-center z-10 gap-10'>
                 <div className='flex flex-col justify-center items-center'>
                     <h2 className='title-contact'>Ten tu primera visita gratis</h2>

@@ -1,0 +1,69 @@
+{
+    "supplements": [
+        {
+            "name": "Proteína en polvo",
+            "description": "Proteína de suero de leche de alta calidad para apoyar el crecimiento muscular y la recuperación.",
+            "price": 29.99,
+            "inStock": 100,
+            "slug": "proteina-en-polvo",
+            "image": "proteina.jpg",
+            "category": "supplements"
+        },
+        {
+            "name": "Creatina monohidratada",
+            "description": "Suplemento de creatina para aumentar la fuerza y el rendimiento durante el entrenamiento.",
+            "price": 19.99,
+            "inStock": 50,
+            "slug": "creatina-monohidratada",
+            "image": "creatina.jpg",
+            "category": "supplements"
+        },
+        {
+            "name": "BCAA (aminoácidos de cadena ramificada)",
+            "description": "Aminoácidos esenciales para apoyar la recuperación muscular y reducir el cansancio durante el ejercicio.",
+            "price": 24.99,
+            "inStock": 30,
+            "slug": "bcaa",
+            "image": "bcaa.jpg",
+            "category": "supplements"
+        }
+    ],
+    "equipment": [
+        {
+            "name": "Bandas elásticas de resistencia",
+            "description": "Conjunto de bandas elásticas de diferentes niveles de resistencia para entrenamiento de fuerza y flexibilidad.",
+            "price": 14.99,
+            "inStock": 75,
+            "slug": "bandas-elasticas",
+            "image": "bandas.jpg",
+            "category": "equipment"
+        },
+        {
+            "name": "Mancuernas ajustables",
+            "description": "Par de mancuernas ajustables con peso variable para entrenamientos de fuerza en casa o en el gimnasio.",
+            "price": 59.99,
+            "inStock": 20,
+            "slug": "mancuernas-ajustables",
+            "image": "mancuernas.jpg",
+            "category": "equipment"
+        },
+        {
+            "name": "Guantes de levantamiento de pesas",
+            "description": "Guantes acolchados para proteger las manos durante los levantamientos de pesas y mejorar el agarre.",
+            "price": 9.99,
+            "inStock": 150,
+            "slug": "guantes-levantamiento",
+            "image": "guantes.jpg",
+            "category": "equipment"
+        },
+        {
+            "name": "Faja lumbar para levantamiento de pesas",
+            "description": "Faja ajustable para proteger la espalda baja durante los levantamientos de pesas pesadas.",
+            "price": 34.99,
+            "inStock": 10,
+            "slug": "faja-lumbar",
+            "image": "faja.jpg",
+            "category": "equipment"
+        }
+    ]
+}

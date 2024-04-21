@@ -6,7 +6,7 @@ import Button from '@/components/ui/button-rounded-1/Button';
 
 function Pricing() {
     return (
-        <div className='p-10 flex flex-col px-[15%] gap-10'>
+        <div className='p-10 flex flex-col px-[15%] gap-10' id='planes'>
             <h2 className='text-white planes'>NUESTROS PLANES</h2>
             <div className='flex w-full justify-center gap-16'>
                 <div className=''>

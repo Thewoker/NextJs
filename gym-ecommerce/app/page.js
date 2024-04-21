@@ -18,7 +18,6 @@ export default function Home() {
         <Calendary/>
         <Pricing/>
         <Contact/>
-        <Footer/>
       </div>
     </main>
   );
