@@ -13,8 +13,8 @@ function Page() {
                 <div className='bg-img-shop flex justify-center items-center h-[70vh] p '>
                     <h1 className='shop-title text-white'>Tienda</h1>
                 </div>
-                <div className='flex px-[10%] py-20'>
-                    <div className='flex flex-col gap-3 w-[20vw]'>
+                <div className='flex max-lg:flex-col px-[10%] py-20'>
+                    <div className='flex flex-col max-lg:flex-row max-lg:w-full max-lg:px-10 max-lg:py-3 gap-3 w-[20vw]'>
                         <Input
                             classNames={{
                                 base: "max-w-full sm:max-w-[10rem] h-10",
@@ -41,7 +41,7 @@ function Page() {
                             <li></li>
                         </ul>
                     </div>
-                    <div className='px-5 flex flex-wrap gap-y-10 justify-between'>
+                    <div className='px-5 flex flex-wrap gap-y-10 justify-between max-xl:justify-around'>
                         <Link href="/shop/proteina-en-polvo"><ItemShopCard/></Link>
                         <Link href="/shop/proteina-en-polvo"><ItemShopCard/></Link>
                         <Link href="/shop/proteina-en-polvo"><ItemShopCard/></Link>

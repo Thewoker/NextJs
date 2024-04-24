@@ -56,3 +56,55 @@
     font-weight: 300;
     font-style: italic;
 }
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+    .title-about-us {
+        font-size: 40px; /* Tamaño de fuente más pequeño para tablets */
+        padding: 3rem 1rem 1rem 0px; /* Menos padding */
+    }
+
+    .about-us-bicep {
+        flex-direction: row; /* Cambio en la dirección del flex para mejor aprovechamiento del espacio */
+        padding: 20px; /* Añadir algo de padding */
+    }
+
+    .bicep-text .text-about, .text-container-about p, .text-container-about h3 {
+        font-size: 14px; /* Texto más pequeño para mejor legibilidad */
+    }
+
+    .img-text-container {
+        grid-template-columns: repeat(2, 1fr); /* Menos columnas para evitar apretujamiento */
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px; /* Círculos más pequeños */
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 480px) {
+    .title-about-us {
+        font-size: 30px; /* Tamaño de fuente aún más pequeño para móviles */
+        padding: 2rem 0.5rem 0.5rem 0px; /* Padding reducido */
+    }
+
+    .about-us-bicep {
+        flex-direction: column; /* Mantener la columna en móviles */
+        padding: 10px; /* Padding reducido */
+    }
+
+    .bicep-text .text-about, .text-container-about p, .text-container-about h3 {
+        font-size: 12px; /* Texto más pequeño para móviles */
+    }
+
+    .img-text-container {
+        grid-template-columns: frepeat(2, 1fr); /* Una sola columna para móviles */
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px; /* Círculos aún más pequeños */
+    }
+}

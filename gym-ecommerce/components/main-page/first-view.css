@@ -45,3 +45,26 @@
 .title-container {
     background-color: rgba(0, 0, 0, 0.35)
 }
+
+
+/* Para tabletas */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 36px; /* Tamaño de fuente más pequeño para tabletas */
+    }
+
+    .subtitle {
+        font-size: 16px; /* Tamaño de fuente más pequeño para tabletas */
+    }
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 24px; /* Tamaño de fuente más pequeño para móviles */
+    }
+
+    .subtitle {
+        font-size: 14px; /* Tamaño de fuente más pequeño para móviles */
+    }
+}

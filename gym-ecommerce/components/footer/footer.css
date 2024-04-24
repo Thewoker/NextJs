@@ -19,3 +19,18 @@
     font-style: normal;
     text-transform: uppercase;
 }
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer div h2, .footer p {
+        font-size: 18px; /* Tamaño de fuente más grande para tablets */
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+    .footer div h2, .footer p {
+        font-size: 14px; /* Tamaño de fuente más pequeño para móviles */
+        text-shadow: 0.5px 0.5px 1px #000000; /* Sombra de texto más ligera para mejor legibilidad */
+    }
+}

@@ -25,3 +25,31 @@
 .form-contact {
     border-radius: 75px;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .title-contact {
+        font-size: 30px; /* Tamaño más pequeño para mejor legibilidad en tablet */
+    }
+
+    .contact-subtitle {
+        font-size: smaller; /* Ajustar el tamaño del subtítulo */
+    }
+
+    .form-contact {
+        border-radius: 50px; /* Radio de borde más pequeño */
+    }
+}
+
+@media (max-width: 767px) {
+    .title-contact {
+        font-size: 20px; /* Tamaño aún más pequeño para móviles */
+    }
+
+    .contact-subtitle {
+        font-size: smaller; /* Ajustar el tamaño del subtítulo */
+    }
+
+    .form-contact {
+        border-radius: 30px; /* Radio de borde más pequeño para móviles */
+    }
+}

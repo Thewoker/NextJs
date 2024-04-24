@@ -10,3 +10,19 @@
     line-height: 150%;
     padding: 5rem 1rem 1rem 0px;
 }
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .title-why-chooose-us {
+        font-size: 40px; /* Tamaño de fuente más pequeño para tablets */
+        padding: 3rem 0.5rem 0.5rem 0px; /* Padding ajustado para tablets */
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+    .title-why-chooose-us {
+        font-size: 30px; /* Tamaño de fuente más pequeño para móviles */
+        padding: 2rem 0.5rem 0.5rem 0px; /* Padding ajustado para móviles */
+    }
+}

@@ -42,3 +42,31 @@
     background-color: #fff; /* Color de la línea */
     box-shadow: 0 0 16px rgba(255, 255, 255, 0.5);
 }
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+    .planes, .title-planes {
+        font-size: 30px; /* Tamaño de fuente más pequeño para tablets */
+    }
+    .pricing-container div {
+        padding-left: 5%; /* Padding más estrecho */
+        padding-right: 5%;
+    }
+    .price {
+        font-size: 18px; /* Ajuste de tamaño de fuente para la clase price */
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 480px) {
+    .planes, .title-planes {
+        font-size: 20px; /* Tamaño de fuente más pequeño para móviles */
+    }
+    .pricing-container div {
+        padding-left: 2%; /* Padding más estrecho */
+        padding-right: 2%;
+    }
+    .price {
+        font-size: 16px; /* Ajuste de tamaño de fuente para la clase price */
+    }
+}
