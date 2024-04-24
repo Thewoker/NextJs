@@ -7,23 +7,33 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 
 function OurBestCoaches() {
-  const [ width, setWidth ] = useState(screen.width)
+  const [width, setWidth] = useState(0); // Inicializa con un valor predeterminado
 
   useEffect(() => {
-    if (width >= 1440){
-      setWidth(30);
-    }else if (width >= 1024){
-      setWidth(40);
-    }else if (width >= 768){
-      setWidth(50);
-    }else if (width >= 425){
-      setWidth(85);
-    }else if (width >= 375){
-      setWidth(95);
-    }else if (width >= 320){
-      setWidth(100);
+    function updateWidth() {
+      const screenWidth = window.innerWidth; // Usa window.innerWidth en lugar de screen.width
+      if (screenWidth >= 1440) {
+        setWidth(30);
+      } else if (screenWidth >= 1024) {
+        setWidth(40);
+      } else if (screenWidth >= 768) {
+        setWidth(50);
+      } else if (screenWidth >= 425) {
+        setWidth(85);
+      } else if (screenWidth >= 375) {
+        setWidth(95);
+      } else if (screenWidth >= 320) {
+        setWidth(100);
+      }
     }
-  }, [], [screen.width])
+
+    updateWidth(); // Llama a la función al montar el componente
+    window.addEventListener('resize', updateWidth); // Añade un listener para cambios de tamaño
+
+    return () => {
+      window.removeEventListener('resize', updateWidth); // Limpia el listener al desmontar el componente
+    };
+  }, []); // El array de dependencias vacío asegura que el efecto solo se ejecute al montar y desmontar
 
   return (
     <div className='pt-14'>
