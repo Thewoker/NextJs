@@ -38,8 +38,8 @@ function OurBestCoaches() {
   return (
     <div className='pt-14'>
       <div className='flex flex-col w-full h-[60vh] max-xl:h-full px-[15%] justify-center bg-[#1c1c1c] our-coaches'>
-        <h2 className=''>Nuestros entrenadores profesionales</h2>
-        <p className='pb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsam dignissimos repellat doloremque sint modi nesciunt inventore nemo ducimus mollitia.</p>
+        <h2 className='russo'>Nuestros entrenadores profesionales</h2>
+        <p className='pb-5 roboto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsam dignissimos repellat doloremque sint modi nesciunt inventore nemo ducimus mollitia.</p>
         <div className=''>
           <Carousel autoPlay="true" centerMode={true} centerSlidePercentage={width} infiniteLoop>
             <Card title="Lesley Lloyd" description="Crossfit Coach" imgURL="person1.jpg" />

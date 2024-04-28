@@ -11,8 +11,8 @@ function MainView() {
             </video>
             <div className='title-container'>
                 <div className='title-subtitle-container flex flex-col justify-center items-center'>
-                    <h2 className='main-title text-center'>TRABAJA COMO UN <br />PROFESIONAL</h2>
-                    <h3 className='subtitle pb-3 md:text-center'>El mejor equipamiento y productos para utilizar todo tu potencial en un solo lugar</h3>
+                    <h2 className='main-title text-center russo'>TRABAJA COMO UN <br />PROFESIONAL</h2>
+                    <h3 className='subtitle pb-3 md:text-center fugaz'>El mejor equipamiento y productos para utilizar todo tu potencial en un solo lugar</h3>
                     <Button content='Empieza ahora' width="194px" height="48px" radius="70px" />
                 </div>
             </div>

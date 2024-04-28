@@ -9,8 +9,8 @@ function Card(props) {
         <div className='flex flex-col w-[250px] h-[250px] bg-[#242424] card'>
             <div className='card-image-coach' style={imgStyle}></div>
             <div className='px-[20px]'>
-                <h3>{props.title}</h3>
-                <p>{props.description}</p>
+                <h3 className='fugaz'>{props.title}</h3>
+                <p className='roboto'>{props.description}</p>
                 <div></div>
             </div>
         </div>

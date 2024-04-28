@@ -12,7 +12,7 @@ function Button(props) {
   return (
     <div className={`flex justify-center items-center text-center text-white ${props.padding ? props.padding : "mx-7"} ${props.bgColor ? props.bgColor : "bg-[#d6fd51]"} custom-button`} style={styles}>
 
-      <p className={`${props.color ? props.color : "text-black"}`}>{contentenido}</p>
+      <p className={`audiowide ${props.color ? props.color : "text-black"}`}>{contentenido}</p>
 
     </div>
   )

@@ -11,7 +11,7 @@ function Button(props) {
   return (
     <div className={`flex justify-center items-center text-center text-white ${props.padding ? props.padding : "mx-7"} custom-button`} style={sizes}>
 
-      <p>{contentenido}</p>
+      <p className='audiowide'>{contentenido}</p>
 
     </div>
   )

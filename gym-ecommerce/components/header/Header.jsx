@@ -18,8 +18,8 @@ function Header() {
 
   return (
     <nav className='absolute grid min-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-xl2 top-0 title-header pt-8 mb-8 pl-5 pr-5 z-10'>
-      <h3><Link href='/'>GYMTEAM</Link></h3>
-      <ul className='flex text-base justify-center items-center tags-nav gap-3 pointer center-items'>
+      <h3 className="fugaz"><Link href='/'>GYMTEAM</Link></h3>
+      <ul className='flex text-base justify-center items-center tags-nav roboto gap-3 pointer center-items'>
         <li>
           <Link href='/'>Volver</Link>
         </li>

@@ -11,16 +11,16 @@ function Footer() {
             <div className='text-white flex items-center gap-2 max-lg:pl-20 max-sm:pl-16'>
                 <FaLinkedin size={30}/>
                 <div className='flex flex-col'>
-                    <h5 className='text-white text-xs'>Make it by:</h5>
-                    <p className='text-white text-xs max-sm:text-balance'>Leonel Fernando Jara Ravarotto</p>
+                    <h5 className='text-white text-xs russo'>Make it by:</h5>
+                    <p className='text-white text-xs max-sm:text-balance fugaz'>Leonel Fernando Jara Ravarotto</p>
                 </div>
             </div>
             <div className='flex items-center gap-3'>
-                <h2 className='text-white'>GYMTEAM</h2>
-                <p className='text-white'>X</p>
+                <h2 className='text-white fugaz'>GYMTEAM</h2>
+                <p className='text-white fugaz'>X</p>
                 <img src="/main-page/TWEB-LABS-Logo-BigCommerce-Store-Logo-with-Transparent-Background.png" className="h-full w-28" alt="" />
             </div>
-            <p className='text-white'>TWeb Labs Corporation © 2024</p>
+            <p className='text-white fugaz'>TWeb Labs Corporation © 2024</p>
         </div >
     )
 }

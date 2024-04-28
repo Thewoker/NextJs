@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fugaz+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
-
 .main-view {
     position: relative;
     width: 100%;
@@ -19,7 +17,6 @@
 }
 
 .main-title {
-    font-family: "Russo One", sans-serif;; 
     font-size: 48px; 
     color: whitesmoke; 
     text-shadow: 2px 2px 4px #000000; 
@@ -33,7 +30,6 @@
 }
 
 .subtitle {
-    font-family: "Fugaz One", sans-serif;
     font-size: 18px; 
     color: whitesmoke; 
     text-shadow: 1px 1px 2px #000000; 

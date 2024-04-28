@@ -24,7 +24,7 @@ function Carousel() {
     const currentQuote = famousQuotes[currentQuoteIndex];
 
     return (
-        <div className="carousel-container flex w-full justify-center items-center bg-[#d6fd51]">
+        <div className="carousel-container flex w-full justify-center items-center bg-[#d6fd51] russo">
             <p className={`text-center carousel-quote ${showQuote ? 'show' : ''}`}>
                 <span><b>{currentQuote.author}</b></span>: {currentQuote.phrase}
             </p>
