@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.philosopher {
+    font-family:  var(--font-philosopher);
+}
+
+.roboto {
+    font-family: var(--font-roboto);
+}
+
+
+/* Establecer márgenes, rellenos y bordes en 0 para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box; /* Incluir el tamaño del borde en el cálculo del ancho/altura */
+}
+
+/* Establecer una fuente base para evitar diferencias entre navegadores */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Eliminar la lista de puntos predeterminada en las listas no ordenadas */
+ul {
+    list-style: none;
+}
+
+/* Eliminar la decoración de enlace predeterminada */
+a {
+    text-decoration: none;
+    color: inherit; /* Heredar el color del texto del elemento padre */
+}
+
+/* Establecer el color de fondo en blanco para todo el documento */
+html, body {
+    background-color: #fff;
+}
+
+/* Añadir otros estilos específicos según tus necesidades */
+/* ... */
+
+/* ¡Recuerda personalizar este archivo según tus preferencias y necesidades! */

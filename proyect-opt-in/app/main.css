@@ -1,0 +1,91 @@
+
+header {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.input-opt-in-form {
+    border: 1px solid #000;
+    /* Adds a black border with a thickness of 1px */
+    border-radius: 10px;
+}
+
+.form-container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input,
+.form-checkbox {
+    width: 100%;
+    padding: 8px;
+    margin-top: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-button {
+    background-color: #00ffff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #004494;
+}
+
+.form-checkbox {
+    width: 20px;
+    /* Ajusta el ancho del checkbox */
+    height: 20px;
+    /* Ajusta la altura del checkbox */
+}
+
+.checkbox-text {
+    display: inline-block;
+    width: 1100px; /* Ajusta este valor según sea necesario */
+    vertical-align: top;
+}
+
+.condiciones-de-uso {
+    writing-mode: vertical-rl;
+    /* Orienta el texto de arriba hacia abajo */
+    transform: rotate(180deg);
+    /* Rota el texto para que se lea de abajo hacia arriba */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.form-button {
+    animation: pulse 2s infinite;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
