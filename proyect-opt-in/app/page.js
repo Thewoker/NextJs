@@ -2,7 +2,7 @@
 import Image from "next/image";
 import "./main.css"
 import dynamic from 'next/dynamic';
-import Header from "@/components/Header/Header";
+
 
 const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 
@@ -35,7 +35,6 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen min-w-screen flex-col items-center justify-center px-24 relative">
-      <Header/>
       <div className="pt-28 flex flex-col justify-center items-center gap-5">
         <p><b>¿Se agrandó  la familia?, ¿falta de espacio?, ¿altas expensas?, ¿necesidad de un balcón o de verde?
           ¿NECESITAS VENDER PARA MUDARTE?</b></p>
@@ -59,7 +58,7 @@ export default function Home() {
             </label>
             <label className="form-label left-align-checkbox flex items-center gap-3">
               <input type="checkbox" name="ambientes" className="form-checkbox" />
-              <span className="checkbox-text checkbox-text">Quiero 2 o 3 ambientes y está ubicado en Palermo, Caballito, Almagro, Belgrano, Recoleta, V Urquiza y V Crespo</span>
+              <span className="checkbox-text checkbox-text">Quiero vender mi departamento de 2 ó 3 ambientes para mudarme a algo mas grande.</span>
             </label>
             <label className="form-label left-align-checkbox flex items-center gap-3">
               <input type="checkbox" name="consejos" className="form-checkbox" />
@@ -78,9 +77,6 @@ export default function Home() {
       <p className="text-gray-200 text-center absolute bottom-0 bg-[#ff0000] text-balance">
         ATENCION: solo te servirá si vendes un departamento o PH,  NO casa / que cuente con balcón patio o terraza y no sea interno /
         que no sea planta baja ni ultimo piso / que se encuentre en buenas condiciones sobre todo baño y cocina / no tenga graves problemas de humedad
-      </p>
-      <p className="absolute flex condiciones-de-uso text-[8px] right-0 py-24">(*) Todas las operaciones inmobiliarias se realizan a través de CONNECTION SERVICIOS 360, una división de CONNECTION NEGOCIOS INMOBILIARIOS SRL.
-        y son objeto de intermediación y conclusión por parte  de la corredora publica inmobiliaria CUCICBA 8626/CMCPM 3996
       </p>
     </main>
   );

@@ -47,3 +47,10 @@ html, body {
 /* ... */
 
 /* ¡Recuerda personalizar este archivo según tus preferencias y necesidades! */
+
+.condiciones-de-uso {
+    writing-mode: vertical-rl;
+    /* Orienta el texto de arriba hacia abajo */
+    transform: rotate(180deg);
+    /* Rota el texto para que se lea de abajo hacia arriba */
+}

@@ -64,13 +64,6 @@ header {
     vertical-align: top;
 }
 
-.condiciones-de-uso {
-    writing-mode: vertical-rl;
-    /* Orienta el texto de arriba hacia abajo */
-    transform: rotate(180deg);
-    /* Rota el texto para que se lea de abajo hacia arriba */
-}
-
 @keyframes pulse {
     0% {
         transform: scale(1);

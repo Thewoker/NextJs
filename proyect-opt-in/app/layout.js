@@ -1,15 +1,18 @@
 import { Philosopher, Roboto } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header/Header";
+import Legal from "@/components/Legal/Legal";
+import { Providers } from "./providers";
 
 const philosopher_init = Philosopher({
-  subsets:['latin'],
-  weight: ['400','700'],
+  subsets: ['latin'],
+  weight: ['400', '700'],
   variable: '--font-philosopher',
 })
 
 const roboto_init = Roboto({
-  subsets:['latin'],
-  weight: ['300','400','700'],
+  subsets: ['latin'],
+  weight: ['300', '400', '700'],
   variable: '--font-roboto',
 });
 
@@ -20,8 +23,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${philosopher_init.variable} ${roboto_init.variable}`}>{children}</body>
+    <html lang="en" className='light'>
+      <body className={`${philosopher_init.variable} ${roboto_init.variable}`}>
+        <Header />
+        <Legal />
+        <Providers>
+          {children}
+        </Providers>
+      </body>
     </html>
   );
 }
