@@ -11,6 +11,13 @@
     font-family: var(--font-roboto);
 }
 
+.montserrat {
+    font-family: var(--font-montserrat);
+}
+
+.bentham {
+    font-family: var(--font-bentham);
+}
 
 /* Establecer márgenes, rellenos y bordes en 0 para todos los elementos */
 * {

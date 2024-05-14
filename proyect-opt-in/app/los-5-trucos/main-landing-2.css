@@ -1,0 +1,56 @@
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    /* Botón en tamaño normal */
+  }
+
+  50% {
+    transform: scale(1.2);
+    /* Botón un 20% más grande */
+  }
+}
+
+.button-animate {
+  animation: pulse 2s infinite;
+  /* Ejecuta la animación cada 2 segundos de forma infinita */
+}
+
+.division-inclinada {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(95deg, white 50%, #1a1da0 50%);
+}
+
+.division-inclinada-invertida {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(60deg, white 50%, #1a1da0 50%);
+}
+
+.division-declinada {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(95deg, #1a1da0 50%, white 50%);
+}
+
+.slider {
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  scroll-snap-align: start;
+}
+
+.circulo {
+  border-radius:  50%;
+  background-color: #1a1da0;
+}
+
+.sombra-texto {
+  text-shadow: 2px 2px 2px white;
+}
