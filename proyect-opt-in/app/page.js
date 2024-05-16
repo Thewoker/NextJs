@@ -35,10 +35,10 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen min-w-screen flex-col items-center justify-center px-24 relative">
-      <div className="pt-28 flex flex-col justify-center items-center gap-5">
+      <div className="pt-16 flex flex-col justify-center items-center gap-5">
         <p><b>¿Se agrandó  la familia?, ¿falta de espacio?, ¿altas expensas?, ¿necesidad de un balcón o de verde?
           ¿NECESITAS VENDER PARA MUDARTE?</b></p>
-        <h1 className="text-3xl font-bold text-[#ff0000]">LOS 5 TRUCOS
+        <h1 className="text-5xl font-bold text-center text-[#ff0000]">LOS 5 TRUCOS <br/>
           para salir de la frustración de no poder mudarte
         </h1>
       </div>

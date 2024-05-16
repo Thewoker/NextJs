@@ -17,24 +17,6 @@
   /* Ejecuta la animación cada 2 segundos de forma infinita */
 }
 
-.division-inclinada {
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(95deg, white 50%, #1a1da0 50%);
-}
-
-.division-inclinada-invertida {
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(60deg, white 50%, #1a1da0 50%);
-}
-
-.division-declinada {
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(95deg, #1a1da0 50%, white 50%);
-}
-
 .slider {
   scroll-snap-type: mandatory;
   scroll-behavior: smooth;
@@ -47,10 +29,59 @@ section {
 }
 
 .circulo {
-  border-radius:  50%;
+  border-radius: 50%;
   background-color: #1a1da0;
 }
 
 .sombra-texto {
   text-shadow: 2px 2px 2px white;
+}
+
+.sombra-chica-texto {
+  text-shadow: 1px 1px 1px white;
+}
+
+.borde-caja {
+  border: 1px solid
+}
+
+.gradiente-1 {
+  background: linear-gradient(to bottom, #006a96 0%, #00b8fe 100%);
+}
+
+@media (min-width: 768px) {
+  .division-inclinada {
+    /* Hace visible la división solo en pantallas de 768px o más anchas */
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(95deg, white 50%, #1a1da0 50%);
+  }
+  .division-inclinada-invertida {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(60deg, white 50%, #1a1da0 50%);
+  }
+  .division-declinada {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(95deg, #1a1da0 50%, white 50%);
+  }
+  
+  .division-declinada-invertida {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(60deg, #1a1da0 50%, white 50%);
+  }
+  
+  .division-superior-color {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, #1a1da0 50%, transparent 50%);
+  }
+  
+  .division-inferior-color {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top, #1a1da0 50%, transparent 50%);
+  }
 }

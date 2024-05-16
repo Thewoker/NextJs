@@ -18,11 +18,11 @@ function BloqueOcho() {
             } else if (screenWidth >= 768) {
                 setWidth(10);
             } else if (screenWidth >= 425) {
-                setWidth(85);
+                setWidth(10);
             } else if (screenWidth >= 375) {
-                setWidth(95);
+                setWidth(10);
             } else if (screenWidth >= 320) {
-                setWidth(100);
+                setWidth(10);
             }
         }
 

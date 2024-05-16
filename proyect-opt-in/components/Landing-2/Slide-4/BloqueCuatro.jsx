@@ -2,7 +2,7 @@ import React from 'react'
 
 function BloqueCuatro() {
     return (
-        <div className='min-h-screen min-w-screen flex items-center px-24 division-img-1'>
+        <div className='min-h-screen min-w-screen flex items-center md:px-24 division-img-1 max-md:flex-wrap max-md:h-full'>
             <div className='flex flex-col items-center w-full gap-5'>
                 <h2 className='montserrat text-center text-lg'><b>Y ME PERDI DE COMPRAR DEPARTAMENTOS QUE ERAN <br />VERDADERAS OPORTUNIDADES</b></h2>
                 <img src="./imgs/landing-2/decepcion.png" className='h-1/2 w-1/2' alt="" />

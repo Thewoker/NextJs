@@ -2,8 +2,8 @@ import React from 'react'
 
 function BloqueTres() {
     return (
-        <section className='min-h-screen min-w-screen flex items-center px-24 division-declinada'>
-            <div className='max-w-[50%] text-white Roboto flex flex-col gap-10'>
+        <section className='min-h-screen min-w-screen flex items-center md:px-24 division-declinada max-md:flex-wrap max-md:h-full max-md:pt-40 '>
+            <div className='md:max-w-[50%] md:text-white Roboto flex flex-col gap-10'>
                 <p><b>De: Juan De Gregorio</b> <br />
                     <b>Buenos Aires, Argentina</b> <br />
 
@@ -18,7 +18,7 @@ function BloqueTres() {
                 </p>
                 <p className='m-auto text-lg'><b>EN 2002 LUEGO DE DIVORCIARME VENDI MI PRIMERA CASA</b></p>
             </div>
-            <div className='max-w-[50%] w-full flex flex-col justify-center items-center gap-5'>
+            <div className='md:max-w-[50%] w-full flex flex-col justify-center items-center gap-5'>
                     <img src="./imgs/landing-2/casa.png" alt="" />
                     <p className='text-center roboto'>PD: Esta es mi casa. <br /> Bonita pero en un barrio con alta inseguridad</p>
                 <h3 className='text-center montserrat'>PERO NO TENÍA IDEA DÓNDE ME METÍA..  <br /> CONTRATE  A LA INMOBILIARIA DE LA ESQUINA <br /> Y ME METÍ EN UN INFIERNO!</h3>
