@@ -2,8 +2,8 @@ import React from 'react'
 
 function BloqueVeintiTres() {
   return (
-    <div className='min-h-screen min-w-screen flex flex-col items-center justify-center relative'>
-      <p className='text-center'>
+    <div className='min-h-screen min-w-screen flex flex-col items-center justify-center relative max-md:pb-10'>
+      <p className='text-center text-2xl pb-32 max-md:px-10'>
         TE CUENTO QUE ESTE CUADRO <b>ES UN MALEVICH (1918)</b> <br />
         CONSIDERADO UNA DE LAS OBRAS DE ARTE MAS IMPORTANTES DEL SIGLO XX <br />
         Fue comprado por el Museo de arte Moderno de NY en usd 75 millones. Su valor actual se estima en cientos de millones <br />

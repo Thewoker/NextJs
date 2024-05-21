@@ -23,6 +23,9 @@ import BloqueVeinte from '@/components/Landing-2/Slide-20/BloqueVeinte';
 import BloqueVeintiUno from '@/components/Landing-2/Slide-21/BloqueVeintiUno';
 import BloqueVientiDos from '@/components/Landing-2/Slide-22/BloqueVientiDos';
 import BloqueVeintiTres from '@/components/Landing-2/Slide-23/BloqueVeintiTres';
+import BloqueCatorcePlus from '@/components/Landing-2/Slide-14/BloqueCatorcePlus';
+import BloqueCuatroPlus from '@/components/Landing-2/Slide-4/BloqueCuatroPlus';
+import BloqueTrecePlus from '@/components/Landing-2/Slide-13/BloqueTrecePlus';
 
 function page() {
 
@@ -32,6 +35,7 @@ function page() {
             <BloqueDos/>
             <BloqueTres/>
             <BloqueCuatro/>
+            <BloqueCuatroPlus/>
             <BloqueCinco/>
             <BloqueSeis/>
             <BlouqeSiete/>
@@ -41,7 +45,9 @@ function page() {
             <BloqueOnce/>
             <BloqueDoce/>
             <BloqueTrece/>
+            <BloqueTrecePlus/>
             <BloqueCatorce/>
+            <BloqueCatorcePlus/>
             <BloqueQuince/>
             <BloqueDiezYSeis/>
             <BloqueDiezYSiete/>

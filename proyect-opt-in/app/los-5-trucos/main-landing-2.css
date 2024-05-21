@@ -49,6 +49,16 @@ section {
   background: linear-gradient(to bottom, #006a96 0%, #00b8fe 100%);
 }
 
+.borde {
+  border: 2px solid #ff0000;
+  padding: 4px;
+  margin: 10px;
+}
+
+.sombra-caja {
+  box-shadow: 10px 10px 10px black;
+}
+
 @media (min-width: 768px) {
   .division-inclinada {
     /* Hace visible la división solo en pantallas de 768px o más anchas */

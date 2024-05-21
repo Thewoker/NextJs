@@ -3,8 +3,8 @@ import React from 'react'
 function BloqueVeintiUno() {
     return (
         <div className='min-h-screen min-w-screen flex flex-col items-center justify-center gap-8'>
-            <div className='w-full p-3 bg-[#4118f0]'><h2 className='text-center text-white roboto text-xl'><b>No hay Ninguna Trampa.</b></h2></div>
-            <p className='text-center'>
+            <div className='w-full p-3 bg-[#4118f0]'><h2 className='text-center text-white roboto text-5xl'><b>No hay Ninguna Trampa.</b></h2></div>
+            <p className='text-center max-md:p-10'>
                 Por eso <b>tenemos más casos de éxito que el 99%</b> de los «gurús» de internet! <br />
                 <b>..Pero este entrenamiento GRATUITO Es Una Oferta Por Poco Tiempo.</b> <br />
                 <b>Actúa rápido.</b> Los 5 <b>TRUCOS pueden cambiar tu vida para siempre</b>.
@@ -35,7 +35,7 @@ function BloqueVeintiUno() {
                 VENDE TU DEPARTAMENTO 16 MESES MAS RAPIDO ! <br />
                 Y asi podras mudarte a un departamento mas grande y lindo!
             </p>
-            <button className='button-animate p-3 text-center text-2xl bg-[#4118f0] rounded-lg w-2/3'><h2 className='text-white roboto'>Si, quiero acceso inmediato al<br /> ENTRENAMIENTO GRATUITO<br /> <b>Los 5 TRUCOS</b></h2></button>
+            <button className='button-animate p-3 text-center text-2xl bg-[#01ffff] rounded-lg w-2/3 max-md:my-20'><h2 className='text-black roboto'>Si, quiero acceso inmediato al<br /> ENTRENAMIENTO GRATUITO<br /> <b>Los 5 TRUCOS</b></h2></button>
         </div>
     )
 }

@@ -2,13 +2,13 @@ import React from 'react'
 
 function BloqueVeinte() {
     return (
-        <div className='min-h-screen min-w-screen md:max-h-screen grid grid-cols-3 grid-rows-2 items-center justify-center overflow-y-hidden max-md:h-full'>
+        <div className='min-h-screen min-w-screen md:max-h-screen grid grid-cols-3 grid-rows-2 items-center justify-center overflow-y-hidden max-md:h-full max-md:px-10 max-md:pb-16'>
             <div className='row-span-1 col-span-3 grid grid-cols-3'>
                 <div className='md:col-span-2 max-md:col-span-3 flex flex-col justify-center items-center'>
-                    <h2 className='text-[#0070c0] text-2xl text-center'>¿QUÉ PASA CUANDO LOS PRECIOS SUBEN?</h2>
+                    <h2 className='text-[#0070c0] text-3xl text-center'><b>¿QUÉ PASA CUANDO LOS PRECIOS SUBEN?</b></h2>
                     <div className='flex justify-center gap-3'>
                         <img src="./imgs/landing-2/etiqueta3.png" className='h-[60px]' alt="" />
-                        <p className='p-2 text-center'>
+                        <p className='p-2 text-center text-lg'>
                             Vas a poder vender tu casa un poco mas alto, pero.. <br />
                             la diferencia cash que debes invertir para mudarte <b>AUMENTA</b>!!!
                         </p>
@@ -16,7 +16,7 @@ function BloqueVeinte() {
                     </div>
                 </div>
                 <div className='md:col-span-1 max-md:col-span-3'>
-                    <h2 className='text-xl text-center'>
+                    <h2 className='text-xl text-center md:pt-16'>
                         PARA APROVECHAR ESTE EXCELENTE MOMENTO PARA MUDARTE CON MINIMA <br />
                         DIFERENCIA NECESITAS VENDER RAPIDO <br />
                         MIRA LA COMPARACION ENTRE UNA VENTA CON EL METODO COMUN Y CON LOS <br />5 TRUCOS
