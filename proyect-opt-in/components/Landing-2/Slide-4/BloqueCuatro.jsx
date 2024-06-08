@@ -10,7 +10,7 @@ function BloqueCuatro() {
             </div>
             <div className='flex flex-col w-full gap-5 items-center max-md:w-full md:w-[40%]'>
                 <div className=' flex justify-center items-center montserrat p-5'><h3 className='text-center text-2xl'><b>Y ME PERDI DE COMPRAR DEPARTAMENTOS QUE ERAN <br />VERDADERAS OPORTUNIDADES</b></h3></div>
-                <img src="./imgs/landing-2/decepcion.png" className='h-1/2 w-1/2' alt="" />
+                <img src="./imgs/landing-2/decepcion.jpg" className='h-1/2 w-1/2' alt="" />
                 <div className=' flex justify-center items-center montserrat p-5'><h3 className='text-center text-2xl text-[#ff0000]'><b>Y YO MIENTRAS VIVIENDO EN LO DE MI MADRE!!!</b></h3></div>
             </div>
         </div>

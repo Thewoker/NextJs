@@ -35,14 +35,14 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen min-w-screen overflow-x-hidden flex-col items-center justify-center md:px-24 relative max-md:h-full">
-      <div className="md:pt-16 max-md:pt-24 flex flex-col justify-center items-center gap-5">
+      <div className="md:pt-24 max-md:pt-24 flex flex-col justify-center items-center ">
         <p><b>Se agrandó  la familia?, falta de espacio?, altas expensas?, necesidad de un balcón o de verde? NECESITAS VENDER PARA MUDARTE?</b></p>
         <h1 className="text-5xl font-bold text-center text-[#ff0000]">LOS 5 TRUCOS <br/>
           para salir de la frustración de no poder mudarte
         </h1>
       </div>
       <div class="container flex max-md:flex-wrap">
-        <div className="form-container flex flex-col gap-2">
+        <div className="form-container flex flex-col ">
           <p className="text-base text-gray-600"><b>VAS A PODER VENDER TU DEPARTAMENTO EN MENOS DE 4 MESES  Y MUDARTE A ALGO MAS GRANDE
             MINIMIZANDO LA DIFERENCIA A PAGAR</b> y todo en forma <b>SIMULTANEA</b> para no tener que ir a vivir a un hotel
           </p>

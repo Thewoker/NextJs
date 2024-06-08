@@ -1,0 +1,81 @@
+.borde-caja {
+    border: 1px solid
+}
+
+ul {
+    list-style: square;
+}
+
+.bg-personalizado-1 {
+    background-image: linear-gradient(135deg, #969696 10%, #fcfcfc 90%);
+}
+
+.borde-caja {
+  border: 1px solid
+}
+
+.borde-caja-azul {
+  border: 1px solid;
+  border-color: #0000ff;
+}
+
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    /* Botón en tamaño normal */
+  }
+
+  50% {
+    transform: scale(1.2);
+    /* Botón un 20% más grande */
+  }
+}
+
+.button-animate {
+  animation: pulse 2s infinite;
+  /* Ejecuta la animación cada 2 segundos de forma infinita */
+}
+
+.sombra-caja {
+  box-shadow: 10px 10px 10px black;
+}
+
+@media (min-width: 768px) {
+    .division-inclinada {
+      /* Hace visible la división solo en pantallas de 768px o más anchas */
+      height: 100vh;
+      width: 100vw;
+      background: linear-gradient(95deg, white 50%, #1a1da0 50%);
+    }
+    .division-inclinada-invertida {
+      height: 100vh;
+      width: 100vw;
+      background: linear-gradient(60deg, white 50%, #1a1da0 50%);
+    }
+    .division-declinada {
+      height: 100vh;
+      width: 100vw;
+      background: linear-gradient(95deg, #1a1da0 50%, white 50%);
+    }
+    
+    .division-declinada-invertida {
+      height: 100vh;
+      width: 100vw;
+      background: linear-gradient(60deg, #1a1da0 50%, white 50%);
+    }
+    
+    .division-superior-color {
+      height: 100vh;
+      width: 100vw;
+      background: linear-gradient(to bottom, #1a1da0 50%, transparent 50%);
+    }
+    
+    .division-inferior-color {
+      height: 100vh;
+      width: 100vw;
+      background: linear-gradient(to top, #1a1da0 50%, transparent 50%);
+    }
+  }

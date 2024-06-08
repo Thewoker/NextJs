@@ -1,7 +1,6 @@
 import { Philosopher, Roboto, Montserrat, Bentham } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
-import Legal from "@/components/Legal/Legal";
 import { Providers } from "./providers";
 
 const philosopher_init = Philosopher({
@@ -38,7 +37,6 @@ export default function RootLayout({ children }) {
     <html lang="en" className='light'>
       <body className={`${philosopher_init.variable} ${roboto_init.variable} ${montserrat_init.variable} ${bentham_init.variable}`}>
         <Header />
-        <Legal />
         <Providers>
           {children}
         </Providers>
