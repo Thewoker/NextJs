@@ -2,7 +2,7 @@ import React from 'react'
 
 function BloqueDoce() {
     return (
-        <div className='min-h-screen md:h-screen min-w-screen flex flex-col items-center justify-center md:px-24 md:mb-80 max-md:flex-wrap max-md:h-full gap-5'>
+        <div className='min-h-screen md:h-screen min-w-screen flex flex-col items-center justify-center md:px-24 md:mb-80 max-md:flex-wrap max-md:h-full gap-5 max-md:px-5 max-md:pb-20'>
             <div className='w-[80%] flex justify-center pt-10 relative'>
                 <p className='bg-[#ffff00] text-xl p-2 absolute left-0 top-0 -rotate-12 -translate-x-1/4 translate-y-1/3'><b>Con triple garantÍa</b></p>
                 <h2 className='text-3xl text-white bg-[#1a1da0] text-center p-5 w-full'>
@@ -15,10 +15,10 @@ function BloqueDoce() {
                 <img src="/imgs/landing-3/arrow-down-6.svg" className='h-full w-1/2' alt="" />
                 <p className='absolute text-white left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl'>¡MIRA!</p>
             </div>
-            <div className='flex w-full md:gap-20'>
+            <div className='flex w-full md:gap-20 max-md:gap-1'>
                 <div className='w-1/2 flex md:justify-end'>
                     <ul className='pl-3 '>
-                        <li className='text-[#ff0000]'>ESCUCHA ACTIVA + TASACION PROFESIONAL</li>
+                        <li className='text-[#ff0000]'>ESCUCHA ACTIVA <br className='md:hidden'/> + TASACION PROFESIONAL</li>
                         <li>HOME REFRESH ( arreglos de alto impacto)</li>
                         <li>PACK DE IMAGENES PROFESIONALES</li>
                         <li>MEGAFONO COMERCIAL</li>

@@ -4,7 +4,7 @@ function BloqueViente() {
   return (
     <div className='min-h-screen min-w-screen flex flex-col items-center justify-center relative max-md:pt-20'>
             <div className='w-full bg-[#4118f0] p-2 absolute top-14'><h2 className='text-white text-center text-4xl roboto'><b>Pero QUIEN SOY YO PARA AYUDARTE?</b></h2></div>
-            <div className='flex w-full gap-10 justify-center items-center md:p-24 max-md:flex-wrap max-md:h-full'>
+            <div className='flex w-full gap-10 justify-center items-center md:p-24 max-md:flex-wrap max-md:h-full max-md:pt-20'>
                 <img src="./imgs/landing-2/juan2.png" className='w-[400px] h-[400px]' alt="" />
                 <div className='flex flex-col gap-3 w-full max-md:px-10'>
                     <div className='flex gap-3 items-center'>

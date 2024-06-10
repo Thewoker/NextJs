@@ -2,7 +2,7 @@ import React from 'react'
 
 function BloqueTrece() {
     return (
-        <div className='min-h-screen  min-w-screen flex flex-col items-center justify-center md:px-24 md:mb-44 max-md:flex-wrap max-md:h-full gap-5'>
+        <div className='min-h-screen  min-w-screen flex flex-col items-center justify-center md:px-24 md:mb-44 max-md:h-full gap-5 max-md:p-5'>
             <h2 className='text-center text-4xl text-[#0070c0]'>
                 <b>
                     … POR SI TODAVÍA TE QUEDARON DUDAS, <br />
@@ -20,7 +20,7 @@ function BloqueTrece() {
                         con  una inmobiliaria competidora <br />
                     </p>
                 </div>
-                <img src="./imgs/landing-3/inmobiliaria juan - Sheet1-1.png" className='h-[50%] w-[52%]' alt="" />
+                <img src="./imgs/landing-3/inmobiliaria juan - Sheet1-1.png" className='md:h-[50%] md:w-[52%]' alt="" />
             </div>
         </div>
     )

@@ -2,9 +2,9 @@ import React from 'react'
 
 function BloqueSeisPlus() {
     return (
-        <div className='min-h-screen md:px-24 max-md:flex-wrap max-md:h-full flex flex-col justify-center items-center gap-5'>
+        <div className='min-h-screen md:px-24 max-md:flex-wrap max-md:h-full flex flex-col justify-center items-center gap-5 max-md:py-20'>
             <img src="/imgs/landing-3/logo.png" className='w-1/6' alt="" />
-            <h2 className='text-center text-4xl'>
+            <h2 className='text-center text-4xl max-md:text-[#ff0000]'>
                 <b>
                     IMPORTANTE / AVISO LEGAL
                     Todas las operaciones inmobiliarias se realizan a través de

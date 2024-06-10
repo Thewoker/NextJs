@@ -13,7 +13,7 @@ function BloqueCuestro() {
         </b>
       </h2>
 
-      <div className='flex w-full gap-5 '>
+      <div className='flex w-full md:gap-5  '>
         <div className='flex flex-col w-1/2 gap-5'>
           <h3 className='text-center text-2xl'><b>ESTO ES LO QUE  PAGARAS POR LA MENTORIA Juaninmobiliario 360</b></h3>
           <p className='text-xl'>
@@ -36,7 +36,7 @@ function BloqueCuestro() {
           </p>
         </div>
       </div>
-          <p className='text-xs absolute right-0 bottom-0'>
+          <p className='text-xs md:absolute right-0 bottom-0'>
             (*) % sobre el precio real de venta. Se paga si efectivamente se vende. Se paga al momento de escriturar <br />
             (**) % Sobre el precio real de compra. Se paga si efectivamente se compra otra propiedad. Se paga al momento de escriturar
           </p>

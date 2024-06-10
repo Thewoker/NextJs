@@ -15,9 +15,9 @@ function BloqueDiezYOcho() {
             } else if (screenWidth >= 1024) {
                 setWidth(10);
             } else if (screenWidth >= 768) {
-                setWidth(10);
+                setWidth(1);
             } else if (screenWidth >= 425) {
-                setWidth(10);
+                setWidth(14);
             } else if (screenWidth >= 375) {
                 setWidth(10);
             } else if (screenWidth >= 320) {
@@ -38,7 +38,7 @@ function BloqueDiezYOcho() {
             <h2 className='text-center text-[#1a1da0] text-5xl'><b>Clientes Felices</b></h2>
             <p className='text-center text-[#1a1da0] text-3xl'>¡Descubre Io que nuestros clientes satisfechos por eI servicio que Ies brindamos tienen para decir!</p>
             <div>
-                <Carousel autoPlay="true" centerMode={true} centerSlidePercentage={width} infiniteLoop>
+                <Carousel autoPlay="true" centerMode={true} centerSlidePercentage={10} infiniteLoop>
                     <CardResenas nombre="Veronica Bohinik" comentario="De excelencia Muy pronto vendieron mi casa a buen valor, y Silvia Gasca, me acompañó en todo momento con mi búsqueda , hasta la escritura.Altamente recomendable.Gracias" />
                     <CardResenas nombre="Puala Muollo" comentario="Muy buena experiencia. Lograron vender la propiedad en muy poco tiempo y supieron contener la ansiedad de mis padres, nuestras y las del comprador. Muchas gracias por toda la gestión 🤗" />
                     <CardResenas nombre="Marcelo mendoza" comentario="impecable, en esos momentos es muy bueno contar con gente responsable que te saben asesorar y guiar. Si no fuera por ellos jamás hubiera podido vender la casa. No es una cuestion de solo vender, me sentí acompañado y contenido." />

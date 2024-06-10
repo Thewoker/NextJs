@@ -2,9 +2,9 @@ import React from 'react'
 
 function BloqueNueve() {
     return (
-        <div className='min-h-screen min-w-screen flex flex-col items-center md:px-24 md:pt-96 max-md:flex-wrap max-md:h-full gap-20'>
-            <div className='w-full h-1/2'>
-                <h2 className='text-[#ff0000] text-center text-6xl'>
+        <div className='min-h-screen min-w-screen flex flex-col items-center md:px-24 md:pt-96 max-md:h-full gap-20 max-md:p-5'>
+            <div className='w-full md:h-1/2 flex justify-center items-center'>
+                <h2 className='text-[#ff0000] text-center md:text-6xl max-md:text-3xl'>
                     ANIMATE A DAR EL PASO! <br />
                     concreta el sueño de mudarte a algo mas grande. <br /><br /> TODO LLAVE EN MANO
                 </h2>

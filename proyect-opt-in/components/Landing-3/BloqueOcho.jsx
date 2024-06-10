@@ -2,13 +2,17 @@ import React from 'react'
 
 function BloqueOcho() {
     return (
-        <div className='min-h-screen min-w-screen flex flex-col items-center md:px-24 md:pt-24 max-md:flex-wrap max-md:h-full gap-5 pb-5'>
-            <img src="./imgs/landing-3/ojos.jpg" className='h-1/6 w-1/6' alt="" />
-            <h2 className='text-center text-2xl'>
+        <div className='min-h-screen flex flex-col items-center md:px-24 md:pt-24 max-md:h-full gap-5 pb-5 max-md:p-5'>
+            <div className='flex justify-center items-center'>
+                <img src="./imgs/landing-3/ojos.jpg" className='md:h-1/6 md:w-1/6 max-md:w-1/2' alt="" />
+            </div>
+            <div className='w-full'>
+                <h2 className='text-center text-2xl'>
                 <b className='text-4xl'>COMO LO HACEMOS?</b><br />
                 <b >SABEMOS QUE TU TIEMPO ES VALIOSO POR ESO HACEMOS PASO A PASO   TODOS ESTO POR VOS</b> <br /><br /><br />
-                <b className='text-[#0000ff] text-4xl'>10 SERVICIOS CLAVE PARA VENDER TU DEPARTAMENTO ACTUAL</b>
+                <b className='text-[#0000ff] md:text-4xl max-md:text-3xl'>10 SERVICIOS CLAVE PARA VENDER TU DEPARTAMENTO ACTUAL</b>
             </h2>
+            </div>
             {/* inicio tarjetas */}
             <div className='flex w-full justify-center'>
                 <h3 className='text-center text-xl pt-6 w-1/2'>DESCRIPCION DEL SERVICIO</h3>
@@ -52,7 +56,7 @@ function BloqueOcho() {
                 </div>
                 {/* parte celeste */}
                 <div className='w-1/2 bg-[#0000ff] flex justify-center items-center '>
-                    <p className='text-3xl text-white'> ✅ 1+2 VALORIZADO EN USD <span className='text-[#00ff00]'><b>100</b></span></p>
+                    <p className='md:text-3xl max-md:text-xl max-md:text-center text-white'> ✅ 1+2 VALORIZADO EN USD <span className='text-[#00ff00]'><b>100</b></span></p>
                 </div>
             </div>
             <div className='flex w-full sombra-caja'>
@@ -75,7 +79,7 @@ function BloqueOcho() {
                 </div>
                 {/* parte celeste */}
                 <div className='w-1/2 bg-[#0000ff] flex justify-center items-center'>
-                    <p className='text-3xl text-white'>✅ VALORIZADO EN USD <span className='text-[#00ff00]'><b>450</b></span></p>
+                    <p className='text-3xl text-white max-md:text-xl max-md:text-center'>✅ VALORIZADO EN USD <span className='text-[#00ff00]'><b>450</b></span></p>
                 </div>
             </div>
             <div className='flex w-full sombra-caja'>
@@ -98,7 +102,7 @@ function BloqueOcho() {
                 </div>
                 {/* parte celeste */}
                 <div className='w-1/2 bg-[#0000ff] flex justify-center items-center'>
-                    <p className='text-3xl text-white'>✅ VALORIZADO EN USD <span className='text-[#00ff00]'><b>300</b></span></p>
+                    <p className='text-3xl text-white max-md:text-xl max-md:text-center'>✅ VALORIZADO EN USD <span className='text-[#00ff00]'><b>300</b></span></p>
                 </div>
             </div>
             <div className='flex w-full sombra-caja'>
@@ -127,7 +131,7 @@ function BloqueOcho() {
                 </div>
                 {/* parte celeste */}
                 <div className='w-1/2 bg-[#0000ff] flex justify-center items-center'>
-                    <p className='text-3xl text-white'>✅ VALORIZADO EN USD <span className='text-[#00ff00]'><b>700</b></span></p>
+                    <p className='text-3xl text-white max-md:text-xl max-md:text-center'>✅ VALORIZADO EN USD <span className='text-[#00ff00]'><b>700</b></span></p>
                 </div>
             </div>
             <div className='flex w-full sombra-caja'>
@@ -148,7 +152,7 @@ function BloqueOcho() {
                 </div>
                 {/* parte celeste */}
                 <div className='w-1/2 bg-[#0000ff] flex justify-center items-center'>
-                    <p className='text-3xl text-white'>✅ VALORIZADO EN  USD <span className='text-[#00ff00]'><b>100</b></span></p>
+                    <p className='text-3xl text-white max-md:text-xl max-md:text-center'>✅ VALORIZADO EN  USD <span className='text-[#00ff00]'><b>100</b></span></p>
                 </div>
             </div>
             <div className='flex w-full sombra-caja'>
@@ -171,7 +175,7 @@ function BloqueOcho() {
                 </div>
                 {/* parte celeste */}
                 <div className='w-1/2 bg-[#0000ff] flex justify-center items-center'>
-                    <p className='text-3xl text-white'>✅ VALORIZADO EN USD <span className='text-[#00ff00]'><b>300</b></span></p>
+                    <p className='text-3xl text-white max-md:text-xl max-md:text-center'>✅ VALORIZADO EN USD <span className='text-[#00ff00]'><b>300</b></span></p>
                 </div>
             </div>
             <div className='flex w-full sombra-caja'>
@@ -198,7 +202,7 @@ function BloqueOcho() {
                 </div>
                 {/* parte celeste */}
                 <div className='w-1/2 bg-[#0000ff] flex justify-center items-center'>
-                    <p className='text-3xl text-white'>✅ VALORIZADO EN  USD <span className='text-[#00ff00]'><b>100</b></span></p>
+                    <p className='text-3xl text-white max-md:text-xl max-md:text-center'>✅ VALORIZADO EN  USD <span className='text-[#00ff00]'><b>100</b></span></p>
                 </div>
             </div>
             <div className='flex w-full sombra-caja'>
@@ -227,7 +231,7 @@ function BloqueOcho() {
                 </div>
                 {/* parte celeste */}
                 <div className='w-1/2 bg-[#0000ff] flex justify-center items-center'>
-                    <p className='text-3xl text-white'>✅ VALORIZADO EN  USD <span className='text-[#00ff00]'><b>250</b></span></p>
+                    <p className='text-3xl text-white max-md:text-xl max-md:text-center'>✅ VALORIZADO EN  USD <span className='text-[#00ff00]'><b>250</b></span></p>
                 </div>
             </div>
             <div className='flex w-full sombra-caja'>
@@ -250,7 +254,7 @@ function BloqueOcho() {
                 </div>
                 {/* parte celeste */}
                 <div className='w-1/2 bg-[#0000ff] flex justify-center items-center'>
-                    <p className='text-3xl text-white'>✅ VALORIZADO EN  HASTA USD <span className='text-[#00ff00]'><b>1700</b></span></p>
+                    <p className='text-3xl text-white max-md:text-xl max-md:text-center'>✅ VALORIZADO EN  HASTA USD <span className='text-[#00ff00]'><b>1700</b></span></p>
                 </div>
             </div>
 
@@ -274,7 +278,7 @@ function BloqueOcho() {
                 </div>
                 {/* parte celeste */}
                 <div className='w-1/2 bg-yellow-300 flex justify-center items-center'>
-                    <p className='text-3xl'>✅ VALORIZADO EN  USD <span className='text-[#00ff00]'><b>300</b></span></p>
+                    <p className='text-3xl max-md:text-xl max-md:text-center'>✅ VALORIZADO EN  USD <span className='text-[#00ff00]'><b>300</b></span></p>
                 </div>
             </div>
             <div className='flex w-full sombra-caja'>
@@ -289,7 +293,7 @@ function BloqueOcho() {
                 </div>
                 {/* parte celeste */}
                 <div className='w-1/2 bg-yellow-300 flex justify-center items-center'>
-                    <p className='text-3xl'>✅ VALORIZADO EN  USD <span className='text-[#00ff00]'><b>200</b></span></p>
+                    <p className='text-3xl max-md:text-xl max-md:text-center'>✅ VALORIZADO EN  USD <span className='text-[#00ff00]'><b>200</b></span></p>
                 </div>
             </div>
             <div className='flex w-full sombra-caja'>
@@ -306,7 +310,7 @@ function BloqueOcho() {
                 </div>
                 {/* parte celeste */}
                 <div className='w-1/2 bg-yellow-300 flex justify-center items-center'>
-                    <p className='text-3xl'>✅ VALORIZADO EN  USD <span className='text-[#00ff00]'><b>600</b></span></p>
+                    <p className='text-3xl max-md:text-xl max-md:text-center'>✅ VALORIZADO EN  USD <span className='text-[#00ff00]'><b>600</b></span></p>
                 </div>
             </div>
 
@@ -314,7 +318,7 @@ function BloqueOcho() {
                 <h2 className='text-6xl'><b>...Por si fuera poco!</b></h2>
                 <h2 className='text-4xl text-center'>BONUS ESPECIALES X 72 HS PARA TU NUEVO DEPARTAMENTO</h2>
             </div>
-                <h2 className='text-4xl text-center bg-[#00ff00] p-2'>35% de descuento en el valor de la mentoría</h2>
+            <h2 className='text-4xl text-center bg-[#00ff00] p-2'>35% de descuento en el valor de la mentoría</h2>
 
             <div className='flex w-full sombra-caja'>
                 <div className='w-1/2 p-3 borde-caja'>
@@ -329,7 +333,7 @@ function BloqueOcho() {
                 </div>
                 {/* parte celeste */}
                 <div className='w-1/2 bg-[#00ff00] flex justify-center items-center'>
-                    <p className='text-3xl'>✅ VALORIZADO EN  USD <span className='text-black'><b>350</b></span></p>
+                    <p className='text-3xl max-md:text-xl max-md:text-center'>✅ VALORIZADO EN  USD <span className='text-black'><b>350</b></span></p>
                 </div>
             </div>
             <div className='flex w-full sombra-caja'>
@@ -343,7 +347,7 @@ function BloqueOcho() {
                 </div>
                 {/* parte celeste */}
                 <div className='w-1/2 bg-[#00ff00] flex justify-center items-center'>
-                    <p className='text-3xl'>✅ VALORIZADO EN  USD <span className=''><b>250</b></span></p>
+                    <p className='text-3xl max-md:text-xl max-md:text-center'>✅ VALORIZADO EN  USD <span className=''><b>250</b></span></p>
                 </div>
             </div>
             <div className='flex w-full sombra-caja'>
@@ -356,7 +360,7 @@ function BloqueOcho() {
                 </div>
                 {/* parte celeste */}
                 <div className='w-1/2 bg-[#00ff00] flex justify-center items-center'>
-                    <p className='text-3xl'>✅ VALORIZADO EN  USD <span className=''><b>300</b></span></p>
+                    <p className='text-3xl max-md:text-xl max-md:text-center'>✅ VALORIZADO EN  USD <span className=''><b>300</b></span></p>
                 </div>
             </div>
 
@@ -371,7 +375,7 @@ function BloqueOcho() {
                 </div>
                 {/* parte celeste */}
                 <div className='w-1/2 bg-[#0000ff] flex justify-center items-center py-5'>
-                    <p className='text-4xl text-white'>✅ USD <span className=''><b>6000</b></span></p>
+                    <p className='text-4xl text-white max-md:text-xl max-md:text-center'>✅ USD <span className=''><b>6000</b></span></p>
                 </div>
             </div>
             <img src="/imgs/landing-3/down-arrow-light-blue.svg" className='w-[15%] h-[15%] p-10' alt="" />

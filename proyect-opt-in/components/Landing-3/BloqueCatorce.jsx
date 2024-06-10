@@ -2,33 +2,37 @@ import React from 'react'
 
 function BloqueCatorce() {
     return (
-        <div className='min-h-screen  min-w-screen flex flex-col items-center justify-center md:px-24 max-md:flex-wrap max-md:h-full gap-5'>
+        <div className='min-h-screen  min-w-screen flex flex-col items-center justify-center md:px-24 max-md:flex-wrap max-md:h-full gap-5 max-md:py-20 max-md:px-5'>
             <p className='text-center text-3xl'><b>Para darte tranquilidad te cuento los próximos pasos</b></p>
-            <div className='flex w-full gap-3 items-center'>
+            <div className='flex max-md:flex-col w-full gap-3 items-center'>
                 <div className='flex bg-[#ed7d31] w-[200px] h-[250px] justify-center items-center px-2 rounded-2xl'>
                     <p className=' text-center'>
                         Tocas el botón y aterrizas en  en la pagina para pagar
                     </p>
                 </div>
-                <img src="./imgs/landing-3/arrow-right-orange.svg" className='w-[5%] h-[5%]' alt="" />
+                <img src="./imgs/landing-3/arrow-right-orange.svg" className='w-[5%] h-[5%] max-md:hidden' alt="" />
+                <img src="./imgs/landing-3/down-arrow-download-orange.svg" className='w-[10%] h-[10%] md:hidden' alt="" />
                 <div className='flex bg-[#a5a5a5] w-[200px] h-[250px] justify-center items-center px-2 rounded-2xl'>
                     <p className=' text-center'>
                         Alli pagaras solo Usd 100 para reservar el CUPO y obtener la TASACION
                     </p>
                 </div>
-                <img src="./imgs/landing-3/arrow-right-gray.svg" className='w-[5%] h-[5%]' alt="" />
+                <img src="./imgs/landing-3/arrow-right-gray.svg" className='w-[5%] h-[5%] max-md:hidden' alt="" />
+                <img src="./imgs/landing-3/down-arrow-download-gray.svg" className='w-[10%] h-[10%] md:hidden' alt="" />
                 <div className='flex bg-[#ffc000] w-[200px] h-[250px] justify-center items-center px-2 rounded-2xl'>
                     <p className=' text-center'>
                         Recibiras la tasación en el transcurso de 7 dias
                     </p>
                 </div>
-                <img src="./imgs/landing-3/arrow-right-yellow.svg" className='w-[5%] h-[5%]' alt="" />
+                <img src="./imgs/landing-3/arrow-right-yellow.svg" className='w-[5%] h-[5%] max-md:hidden' alt="" />
+                <img src="./imgs/landing-3/down-arrow-download-yellow.svg" className='w-[10%] h-[10%] md:hidden' alt="" />
                 <div className='flex bg-[#599bd5] w-[200px] h-[250px] justify-center items-center px-2 rounded-2xl'>
                     <p className=' text-center'>
                         Si apruebas la tasación tendrás que pagar el SALDO de la MENTORIA
                     </p>
                 </div>
-                <img src="./imgs/landing-3/arrow-right-light-blue.svg" className='w-[5%] h-[5%]' alt="" />
+                <img src="./imgs/landing-3/arrow-right-light-blue.svg" className='w-[5%] h-[5%] max-md:hidden' alt="" />
+                <img src="./imgs/landing-3/down-arrow-download-light-bluee.svg" className='w-[10%] h-[10%] md:hidden' alt="" />
                 <div className='flex bg-[#70ad47] w-[200px] h-[250px] justify-center items-center px-2 rounded-2xl'>
                     <p className=' text-center'>
                         SI NO APRUEBAS la TASACION se te reintegrará el dinero dentro de los 7 días desde el rechazo de la tasacion

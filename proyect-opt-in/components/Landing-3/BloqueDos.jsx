@@ -2,11 +2,11 @@ import React from 'react'
 
 function BloqueDos() {
     return (
-        <div className='min-h-screen md:px-24 md:pt-24 max-md:flex-wrap max-md:h-full flex flex-col justify-center items-center gap-3'>
-            <img src="/imgs/landing-3/garantia.jpg" className='w-1/6 h-1/6' alt="" />
+        <div className='min-h-screen md:px-24 md:pt-24 max-md:flex-wrap max-md:h-full flex flex-col justify-center items-center gap-3 max-md:px-5 max-md:py-10'>
+            <img src="/imgs/landing-3/garantia.jpg" className='md:w-1/6 md:h-1/6 max-md:w-1/2' alt="" />
             <p className='text-center text-6xl'>TRIPLE Garantía incondicional <br /> por  contrato</p>
-            <div className='flex w-full gap-4'>
-                <div className='bg-[#4472c4] text-white p-3 w-1/3'>
+            <div className='flex w-full gap-4 max-md:flex-wrap'>
+                <div className='bg-[#4472c4] text-white p-3 md:w-1/3'>
                     <h3 className='text-center text-xl'>Garantía 1</h3>
                     <p className='text-center'>
                         <b>
@@ -18,7 +18,7 @@ function BloqueDos() {
                         </b>
                     </p>
                 </div>
-                <div className='bg-[#4472c4] text-white p-3 w-1/3'>
+                <div className='bg-[#4472c4] text-white p-3 md:w-1/3'>
                     <h3 className='text-center text-xl'>Garantía 2</h3>
                     <p className='text-center'>
                         <b>
@@ -30,7 +30,7 @@ function BloqueDos() {
                         </b>
                     </p>
                 </div>
-                <div className='bg-[#4472c4] text-white p-3 w-1/3'>
+                <div className='bg-[#4472c4] text-white p-3 md:w-1/3'>
                     <h3 className='text-center text-xl'>Garantía 3</h3>
                     <p className='text-center'>
                         <b>

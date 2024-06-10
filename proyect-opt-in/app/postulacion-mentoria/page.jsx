@@ -23,13 +23,14 @@ import BloqueViente from '@/components/Landing-3/BloqueViente'
 import BloqueCuatroPlus from '@/components/Landing-3/BloqueCuatroPlus'
 import BloqueSeisPlus from '@/components/Landing-3/BloqueSeisPlus'
 import BloqueVientiUno from '@/components/Landing-3/BloqueVientiUno'
+import Footer from '@/components/Landing-3/Footer'
 
 
 
 
 function page() {
   return (
-    <div className='max-w-screen overflow-x-hidden'>
+    <div className=' overflow-x-hidden'>
         <BloqueUno/>
         <BloqueSiete/>
         <BloqueDos/>
@@ -54,6 +55,7 @@ function page() {
         <BloqueViente/>
         <BloqueVientiUno/>
         <BloqueQuince/>
+        <Footer/>
     </div>
   )
 }

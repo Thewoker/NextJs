@@ -2,10 +2,10 @@ import React from 'react'
 
 function BloqueDiezYSiete() {
     return (
-        <div className='min-h-screen min-w-screen flex flex-col items-center justify-center md:px-24 max-md:flex-wrap max-md:h-full gap-5'>
-            <div className='flex w-full gap-10'>
+        <div className='min-h-screen min-w-screen flex flex-col items-center justify-center md:px-24 max-md:h-full gap-5 max-md:p-5'>
+            <div className='flex w-full md:gap-10 max-md:gap-3'>
                 <div className='flex flex-col gap-5 w-1/2 bg-[#4472c4] rounded-2xl p-5 text-center sombra-caja'>
-                    <h2 className='text-3xl text-white'>SI CUMPLES LAS CONDICIONES <br /> EL MOMENTO ES AHORA!</h2>
+                    <h2 className='md:text-3xl max-md:text-xl text-white'>SI CUMPLES LAS CONDICIONES <br /> EL MOMENTO ES AHORA!</h2>
                     <p className='text-white'>
                         <b>
                             Ni mañana ni pasado es ahora
@@ -13,7 +13,7 @@ function BloqueDiezYSiete() {
                         </b>
                     </p>
                 </div><div className='flex flex-col gap-5 w-1/2 bg-[#4472c4] rounded-2xl p-5 text-center sombra-caja'>
-                    <h2 className='text-3xl text-white'>PERDELE EL MIEDO</h2>
+                    <h2 className='md:text-3xl max-md:text-xl text-white'>PERDELE EL MIEDO</h2>
                     <p className=' text-white'>
                         <b>
                             Tenes miedo por que no sabes como vender una casa, como buscar otra al mismo tiempo, de donde sacar un escribano, como mover tu dinero sin que te lo roben, que no te estafen con las comisiones e impuestos.
