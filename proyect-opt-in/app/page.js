@@ -34,15 +34,15 @@ export default function Home() {
 
 
   return (
-    <main className="flex min-h-screen min-w-screen overflow-x-hidden flex-col items-center justify-center md:px-24 relative max-md:h-full">
-      <div className="md:pt-24 max-md:pt-24 flex flex-col justify-center items-center ">
+    <main className="flex min-h-screen overflow-x-hidden flex-col items-center justify-center md:px-24 relative max-md:h-full pb-20">
+      <div className="pt-32 flex flex-col justify-center items-center max-md:mt-10 max-md:text-center gap-3 max-md:pb-5">
         <p><b>Se agrandó  la familia?, falta de espacio?, altas expensas?, necesidad de un balcón o de verde? NECESITAS VENDER PARA MUDARTE?</b></p>
         <h1 className="text-5xl font-bold text-center text-[#ff0000]">LOS 5 TRUCOS <br/>
           para salir de la frustración de no poder mudarte
         </h1>
       </div>
       <div class="container flex max-md:flex-wrap">
-        <div className="form-container flex flex-col ">
+        <div className="form-container flex flex-col gap-5">
           <p className="text-base text-gray-600"><b>VAS A PODER VENDER TU DEPARTAMENTO EN MENOS DE 4 MESES  Y MUDARTE A ALGO MAS GRANDE
             MINIMIZANDO LA DIFERENCIA A PAGAR</b> y todo en forma <b>SIMULTANEA</b> para no tener que ir a vivir a un hotel
           </p>
@@ -63,7 +63,7 @@ export default function Home() {
               <input type="checkbox" name="consejos" className="form-checkbox" />
               <span className="checkbox-text checkbox-text">Acepto recibir correos con consejos de temas inmobiliarios</span>
             </label>
-            <button type="submit" className="form-button text-black"><b className="text-black text-2xl">Ir a ver video con  los 5 TRUCOS</b></button>
+            <button type="submit" className="form-button text-black max-md:m-5"><b className="text-black text-2xl">Ir a ver video con  los 5 TRUCOS</b></button>
           </form>
         </div>
         <div className="flex flex-col justify-center items-center p-5 gap-3 m-auto max-md:max-w-full">
@@ -78,7 +78,7 @@ export default function Home() {
       </div>
       <p className="text-black text-center absolute bottom-0 bg-[#ff0000] text-balance ">
         ATENCION: solo te servirá si vendes un departamento o PH,  NO casa / que cuente con balcón patio o terraza y no sea interno /
-        que no sea planta baja ni ultimo piso / que se encuentre en buenas condiciones sobre todo baño y cocina / no tenga graves problemas de humedad
+        que no sea planta baja ni ultimo piso / que se encuentre en buenas condiciones sobre todo baño y cocina / no tenga graves problemas de humedad / Escritura a tu nombre
       </p>
     </main>
   );

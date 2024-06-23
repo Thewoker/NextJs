@@ -11,7 +11,7 @@ function BloqueDiez() {
         <button className='p-10 rounded-lg bg-[#01ffff] text-black roboto button-animate sombra-caja'><b>Si, quiero acceso inmediato al <br />ENTRENAMIENTO GRATUITO<br/> <span className='text-2xl'>Los 5 TRUCOS</span></b></button>
         <p className=" text-center absolute bottom-0 bg-[#ff0000] text-balance roboto">
                 ATENCION: solo te servirá si vendes un departamento o PH,  NO casa / que cuente con balcón patio o terraza y no sea interno /
-                que no sea planta baja ni ultimo piso / que se encuentre en buenas condiciones sobre todo baño y cocina / no tenga graves problemas de humedad</p>
+                que no sea planta baja ni ultimo piso / que se encuentre en buenas condiciones sobre todo baño y cocina / no tenga graves problemas de humedad / Escritura a tu nombre</p>
     </div>
   )
 }

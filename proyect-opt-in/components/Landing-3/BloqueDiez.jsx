@@ -18,7 +18,7 @@ function BloqueDiez() {
                     <b className='text-5xl'>BONO RECO</b> <br /><br />
                     <b className='text-[#ff0000] text-7xl'>Usd 500 </b><br /><br />
                     Si   en algún momento del proceso nos recomendas a una persona que ingrese su propiedad al sistema vende fácil 9,0 ( igual a este) y lo hace de manera efectiva <br />
-                    recibiras el BONO RECO  y se te  reintegraran <span className='text-5xl'>USD 500</span> (*) <br />
+                    recibiras el BONO RECO  y se te  reintegraran <br className='md:hidden'/><span className='text-5xl'>USD 500</span> (*) <br />
                 </h2>
                 <p className='text-xs md:text-white absolute right-5 bottom-0'>(*) El reintegro se efectua a los 30 días  en que la persona firme el contrato de adhesion</p>
             </div>

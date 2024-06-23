@@ -24,7 +24,7 @@ function BloqueDiezYSiete() {
                     </p>
                 </div>
             </div>
-            <div className='flex flex-col w-full bg-[#4472c4] rounded-2xl p-5 gap-5 sombra-caja'>
+            <div className='flex flex-col w-full bg-green-500 rounded-2xl p-5 gap-5 sombra-caja'>
                 <h2 className='text-5xl text-white text-center w-full'>Te parece cara la MENTORÍA?</h2>
                 <div className='flex w-full items-center gap-3 justify-center '>
                     <img src="/imgs/landing-3/check-circle.svg" className='h-[3%] w-[3%]' alt="" />

@@ -14,9 +14,9 @@ function BloqueOcho() {
             </h2>
             </div>
             {/* inicio tarjetas */}
-            <div className='flex w-full justify-center'>
-                <h3 className='text-center text-xl pt-6 w-1/2'>DESCRIPCION DEL SERVICIO</h3>
-                <h3 className='text-center text-xl pt-6 w-1/2'>VALORIZACIÓN DEL SERVICIO</h3>
+            <div className='flex w-full justify-center '>
+                <h3 className='text-center md:text-xl pt-6 w-1/2'>DESCRIPCION <br  className='md:hidden'/> DEL SERVICIO</h3>
+                <h3 className='text-center md:text-xl pt-6 w-1/2'>VALORIZACIÓN <br  className='md:hidden'/> DEL SERVICIO</h3>
             </div>
             <div className='flex w-full sombra-caja'>
                 <div className='w-1/2 p-3 borde-caja'>
@@ -263,8 +263,8 @@ function BloqueOcho() {
                 <b className='text-4xl'>SERVICIOS BONIFICADOS PARA TU NUEVO DEPARTAMENTO</b><br />
             </h2>
             <div className='flex w-full justify-center'>
-                <h3 className='text-center text-xl pt-6 w-1/2'>DESCRIPCION DEL SERVICIO</h3>
-                <h3 className='text-center text-xl pt-6 w-1/2'>VALORIZACIÓN DEL SERVICIO</h3>
+                <h3 className='text-center text-xl pt-6 w-1/2'>DESCRIPCION <br className='md:hidden'/> DEL SERVICIO</h3>
+                <h3 className='text-center text-xl pt-6 w-1/2'>VALORIZACIÓN <br className='md:hidden'/> DEL SERVICIO</h3>
             </div>
             <div className='flex w-full sombra-caja'>
                 <div className='w-1/2 p-3 borde-caja'>
@@ -340,7 +340,7 @@ function BloqueOcho() {
                 <div className='w-1/2 p-3 borde-caja'>
                     <p className='text-center'>
                         {/* titulo tarjeta */}
-                        <b>DECORADORA</b>
+                        <b>DECORADORA</b> <br />
                         Ponemos a tu disposición una Decoradora Profesional para que te de ideas y sugerencias para amoblar y decorar tu nueva casa.
                     </p>
 
@@ -379,7 +379,7 @@ function BloqueOcho() {
                 </div>
             </div>
             <img src="/imgs/landing-3/down-arrow-light-blue.svg" className='w-[15%] h-[15%] p-10' alt="" />
-            <h2 className='text-2xl text-center'><b className='text-5xl text-[#ff0000]'>Pero solo pagaras USD 977</b> ( por 72 hs, luego USD 1500)</h2>
+            <h2 className='text-2xl text-center'><b className='text-5xl text-[#ff0000]'>Pero solo pagaras USD 977</b> <br className='md:hidden'/> ( por 72 hs, luego USD 1500)</h2>
         </div>
     )
 }

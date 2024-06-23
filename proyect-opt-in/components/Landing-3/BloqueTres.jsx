@@ -19,7 +19,7 @@ function BloqueTres() {
                         Reserva tu cupo por USD 100, congela el precio de la Mentoría <br /> y obtené la tasación de tu propiedad <br />
                         (Una vez que recibas y apruebes nuestra tasación pagaras el saldo. Aprox 7 dias) <br />
                     </p>
-                    <button className='text-white bg-[#0000ff] mx-10 py-2 text-3xl rounded-lg button-animate'><b>INSCRIBIRME A LA MENTORIA</b></button>
+                    <button className='text-white bg-[#0000ff] mx-10 py-2 text-3xl rounded-lg button-animate'><b><span className='text-xl'>INSCRIBIRME A LA</span> MENTORIA</b></button>
                     <p className='text-[#0000ff] text-center text-sm'>
                         🔐Reserva segura. No te preocupes, si no estas conforme con nuestro servicio o con nuestra tasación, <br />
                         te devolvemos el dinero sin preguntas ( ver garantías 1-2-3)

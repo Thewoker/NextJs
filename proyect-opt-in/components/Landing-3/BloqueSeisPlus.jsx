@@ -2,7 +2,7 @@ import React from 'react'
 
 function BloqueSeisPlus() {
     return (
-        <div className='min-h-screen md:px-24 max-md:flex-wrap max-md:h-full flex flex-col justify-center items-center gap-5 max-md:py-20'>
+        <div className='min-h-screen md:px-24 max-md:flex-wrap max-md:h-full flex flex-col justify-center items-center gap-5 max-md:py-20 max-md:p-5'>
             <img src="/imgs/landing-3/logo.png" className='w-1/6' alt="" />
             <h2 className='text-center text-4xl max-md:text-[#ff0000]'>
                 <b>

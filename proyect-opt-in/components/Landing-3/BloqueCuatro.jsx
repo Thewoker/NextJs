@@ -17,7 +17,7 @@ function BloqueCuestro() {
         <div className='flex flex-col w-1/2 gap-5'>
           <h3 className='text-center text-2xl'><b>ESTO ES LO QUE  PAGARAS POR LA MENTORIA Juaninmobiliario 360</b></h3>
           <p className='text-xl'>
-            ▶️ USD 975  Por la mentoría (Por 72 hs, luego Usd 1,500)
+            ▶️ USD 977  Por la mentoría (Por 72 hs, luego Usd 1,500)
             <br /><br />
             ▶️ 3% Por la operación de venta de tu actual departamento (*)
             <br /><br />
@@ -28,7 +28,7 @@ function BloqueCuestro() {
           <h3 className='text-center text-2xl'><b>CUANTO PAGARIAS  EN UNA INMOBILIARIA COMPETIDORA?</b></h3>
           <p className='text-xl'>
             <span className='line-through'>
-            ▶️ USD 975  Por la mentoría.  Lo pagas ahora</span>
+            ▶️ USD 977  Por la mentoría.  Lo pagas ahora</span>
             <br /><br />
             ▶️ 3% Por la operación de venta de tu actual departamento (*)
             <br /><br />

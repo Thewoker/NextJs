@@ -2,6 +2,7 @@ import { Philosopher, Roboto, Montserrat, Bentham } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import { Providers } from "./providers";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const philosopher_init = Philosopher({
   subsets: ['latin'],
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
           {children}
         </Providers>
       </body>
+      <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GID}`} />
     </html>
   );
 }

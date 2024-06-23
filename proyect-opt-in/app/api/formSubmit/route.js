@@ -25,7 +25,7 @@ export async function POST(req, res) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Basic ' + Buffer.from('LeoFJR:33c083eff03ce0fa77347d31ea001a2d-us10').toString('base64')
+        'Authorization': 'Basic ' + Buffer.from('LeoFJR:9a731b3a9ceebc5d447076b1974bfb19-us10').toString('base64')
       }
     };
 
