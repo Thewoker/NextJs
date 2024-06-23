@@ -12,6 +12,7 @@ const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 
 function MentUno() {
     const [isOpen, setIsOpen] = useState(false);
+    const screenWidth = window.innerWidth;
 
     let now = today(getLocalTimeZone());
     let futureDate = now.add({ days: 14 });
@@ -73,7 +74,7 @@ function MentUno() {
                     <p className="text-center max-md:w-[60%]">*Si no podes verlo ahora, agéndate para verlo el día y horario que quieras, haciendo click en el botón de aquí arriba.</p>
                 </div>
                 <div className='flex flex-col justify-center max-md:gap-10 md:w-1/2 items-center max-md:p-5 max-md:px-10'>
-                    <ReactPlayer width={window.innerWidth > 425 ? 600 : 300} height={window.innerWidth > 425 ? 400 : 200} url={`https://www.youtube.com/watch?v=YmI_f3vIlt8`} />
+                    <ReactPlayer width={screenWidth > 425 ? 600 : 300} height={screenWidth > 425 ? 400 : 200} url={`https://www.youtube.com/watch?v=YmI_f3vIlt8`} />
                     <p className="text-center max-md:w-[60%]">
                         IMPORTANTE: el botón para POSTULAR a la MENTORÍA aparecerá aquí abajo cuando
                         finalice el video.
